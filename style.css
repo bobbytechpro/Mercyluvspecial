@@ -265,3 +265,20 @@ body.dark-mode .menu-overlay {
     font-size: 14px;
   }
 }
+
+.whatsapp-btn {
+  width: 60px;
+  height: 60px;
+  right: 20px;
+  bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .whatsapp-btn {
+    width: 55px;
+    height: 55px;
+    right: 15px;
+    bottom: 15px;
+  }
+}
+

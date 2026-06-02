@@ -182,3 +182,6 @@ function updateCountdown() {
 
 setInterval(updateCountdown, 1000);
 updateCountdown();
+
+mobileMenu.classList.remove("translate-x-full");
+mobileMenu.classList.add("translate-x-full");
