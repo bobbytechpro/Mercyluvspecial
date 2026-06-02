@@ -183,22 +183,14 @@ function updateCountdown() {
 setInterval(updateCountdown, 1000);
 updateCountdown();
 
-mobileMenu.classList.remove("translate-x-full");
-mobileMenu.classList.add("translate-x-full");
-
-
 const menuBtn = document.getElementById("menuBtn");
-const mobileMenu = document.getElementById("mobileMenu");
 const closeMenu = document.getElementById("closeMenu");
+const mobileMenu = document.getElementById("mobileMenu");
 
-if(menuBtn){
-  menuBtn.addEventListener("click", () => {
-    mobileMenu.classList.remove("translate-x-full");
-  });
-}
+menuBtn.addEventListener("click", () => {
+  mobileMenu.classList.remove("translate-x-full");
+});
 
-if(closeMenu){
-  closeMenu.addEventListener("click", () => {
-    mobileMenu.classList.add("translate-x-full");
-  });
-}
+closeMenu.addEventListener("click", () => {
+  mobileMenu.classList.add("translate-x-full");
+});
