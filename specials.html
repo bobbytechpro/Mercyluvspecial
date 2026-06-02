@@ -31,6 +31,7 @@
 
 
       <!-- Desktop Nav -->
+ 
       <nav class="hidden md:flex lg:flex h-20 md:h-24 py-4 items-center gap-10 text-base font-medium text-gray-300">
 
         <a href="index.html" class="hover:text-yellow-400 transition">
@@ -104,6 +105,12 @@
       duration-500
       "
     >
+          <button
+id="closeMenu"
+class="text-white text-4xl self-end"
+>
+×
+</button>
 
     <div class="flex flex-col px-6 py-8 gap-6 text-lg font-medium text-gray-300">
 
@@ -132,64 +139,84 @@
   </div>
 
 </header>
+<!-- ========================= -->
+<!-- CHEF SIGNATURE HERO -->
+<!-- ========================= -->
+<section
+  class="relative min-h-[85vh] md:min-h-screen flex items-center justify-center overflow-hidden pt-24 md:pt-32"
+>
+ <!-- Background -->
 
-<!-- CHEF SIGNATURE SPECIALS -->
-<section class="relative min-h-[75vh] flex items-center pt-20 md:pt-32 pb-16 md:pb-24 justify-center overflow-hidden"></section>
+<img
+ src="./images/menuanotherbg.jpg"
+ alt="Chef Special"
+ class="absolute inset-0 w-full h-full object-cover"
+/>
 
-  <!-- Background Image -->
-  <img
-    src="./images/menuanotherbg.jpg"
-    alt="Chef Special"
-    class="absolute inset-0 w-full h-full object-cover"
-  />
+  <!-- Overlay -->
 
-  <!-- Dark Overlay -->
-  <div class="absolute inset-0 bg-black/65"></div>
+  <div class="absolute inset-0 bg-black/70"></div>
 
-  <!-- Glow Effect -->
-  <div class="absolute inset-0 bg-gradient-to-r from-yellow-500/10 via-transparent to-yellow-500/10"></div>
+  <!-- Luxury Glow -->
+
+  <div
+    class="absolute inset-0 bg-gradient-to-r from-yellow-500/10 via-transparent to-yellow-500/10"
+  ></div>
 
   <!-- Content -->
-  <div class="relative z-10 text-center max-w-5xl mx-auto px-6">
 
-    <p class="text-yellow-400 tracking-[8px] uppercase mb-5 text-sm md:text-base">
-      Chef's Exclusive Collection
-    </p>
+  <div
+    class="relative z-10 max-w-6xl mx-auto px-5 md:px-8 text-center"
+  >
 
-   <h1 class="text-4xl md:text-7xl font-black leading-tight">
-      Signature
-      <span class="text-yellow-400">
-        Specials
-      </span>
-    </h1>
 
-    <p class="text-gray-300 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
-      Experience handcrafted dishes prepared with premium ingredients,
-      exceptional flavors, and luxury presentation designed to create unforgettable dining moments.
-    </p>
+<p
+  class="text-yellow-400 uppercase tracking-[6px] md:tracking-[10px] text-xs md:text-sm mb-5"
+>
+  Chef's Exclusive Collection
+</p>
 
-    <div class="flex flex-col sm:flex-row justify-center gap-4 mt-10"></div>
+<h1
+  class="text-4xl sm:text-5xl md:text-7xl font-black leading-tight"
+>
+  Signature
+  <span class="text-yellow-400">
+    Specials
+  </span>
+</h1>
 
-      <a
-        href="#featured"
-        class="premium-btn px-8 py-4 rounded-full text-black font-semibold"
-      >
-        Explore Specials
-      </a>
+<p
+  class="mt-6 text-base md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed"
+>
+  Experience handcrafted dishes prepared with premium ingredients,
+  exceptional flavors and luxury presentation designed for unforgettable dining moments.
+</p>
 
-      <a
-        href="#offer"
-        class="border border-white/30 px-8 py-4 rounded-full text-white hover:bg-white hover:text-black transition"
-      >
-        Today's Offer
-      </a>
+<div
+  class="flex flex-col sm:flex-row justify-center items-center gap-4 mt-10"
+>
 
-    </div>
+  <a
+    href="#featured"
+    class="premium-btn px-8 py-4 rounded-full text-black font-semibold w-full sm:w-auto text-center"
+  >
+    Explore Specials
+  </a>
+
+  <a
+    href="#offer"
+    class="border border-white/20 px-8 py-4 rounded-full text-white hover:bg-white hover:text-black transition w-full sm:w-auto text-center"
+  >
+    Today's Offer
+  </a>
+
+</div>
+
 
   </div>
-  
 
-</section>
+
+
 <section
   id="featured"
   class="py-24 px-5 lg:px-12 bg-[#0b0b0b]"
@@ -207,132 +234,7 @@
 
   </div>
 
-  <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6">
-
-    <!-- CARD 1 -->
-    <div class="glass-card rounded-[35px] overflow-hidden group">
-
-      <div class="relative overflow-hidden">
-
-        <img
-  src="./images/hero5.jpeg"
-  class="w-full h-48 md:h-72 object-cover"
-/>
-
-        <div class="absolute top-5 right-5 bg-yellow-400 text-black px-4 py-2 rounded-full font-bold">
-          Chef Pick
-        </div>
-
-      </div>
-
-      <div class="p-8">
-
-        <h3 class="text-3xl font-bold text-white mb-4">
-          Royal Grilled Steak
-        </h3>
-
-        <p class="text-gray-300 mb-6">
-          Premium grilled steak with signature seasoning and gourmet presentation.
-        </p>
-
-        <div class="flex justify-between items-center">
-
-          <span class="text-yellow-400 text-3xl font-black">
-            $45
-          </span>
-
-          <button class="premium-btn px-6 py-3 rounded-full">
-            Order
-          </button>
-
-        </div>
-
-      </div>
-
-    </div>
-
-    <!-- CARD 2 -->
-    <div class="glass-card rounded-[35px] overflow-hidden group">
-
-      <div class="relative overflow-hidden">
-
-        <img
-          src="./images/hero6.jpeg"
-          alt=""
-          class="w-full h-80 object-cover group-hover:scale-110 transition duration-700"
-        >
-
-        <div class="absolute top-5 right-5 bg-yellow-400 text-black px-4 py-2 rounded-full font-bold">
-          Popular
-        </div>
-
-      </div>
-
-      <div class="p-8">
-
-        <h3 class="text-3xl font-bold text-white mb-4">
-          Seafood Deluxe
-        </h3>
-
-        <p class="text-gray-300 mb-6">
-          Fresh seafood platter prepared with premium ingredients.
-        </p>
-
-        <div class="flex justify-between items-center">
-
-          <span class="text-yellow-400 text-3xl font-black">
-            $52
-          </span>
-
-          <button class="premium-btn px-6 py-3 rounded-full">
-            Order
-          </button>
-
-        </div>
-
-      </div>
-
-    </div>
-
-    <!-- CARD 3 -->
-    <div class="glass-card rounded-[35px] overflow-hidden group">
-
-      <div class="relative overflow-hidden">
-
-        <img
-          src="./images/hero3.jpeg"
-          alt=""
-          class="w-full h-80 object-cover group-hover:scale-110 transition duration-700"
-        >
-
-      </div>
-
-      <div class="p-8">
-
-        <h3 class="text-3xl font-bold text-white mb-4">
-          Luxury Dessert
-        </h3>
-
-        <p class="text-gray-300 mb-6">
-          Rich handcrafted dessert made with premium ingredients.
-        </p>
-
-        <div class="flex justify-between items-center">
-
-          <span class="text-yellow-400 text-3xl font-black">
-            $28
-          </span>
-
-          <button class="premium-btn px-6 py-3 rounded-full">
-            Order
-          </button>
-
-        </div>
-
-      </div>
-
-    </div>
-
+  <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
   </div>
 
 </section>
