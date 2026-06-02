@@ -23,15 +23,16 @@
       <!-- Logo -->
       <div class="flex items-center gap-3">
         <img
-          src="./images/Mercylogo.png"
-          alt="Logo"
-          class="w-16 h-16 md:w-20 md:h-20 object-contain"
-        />
+      src="./images/Mercylogo.png"
+      class="w-12 h-12 md:w-20 md:h-20"
+    >
+
+        
       </div>
 
 
       <!-- Desktop Nav -->
-      <nav class="hidden lg:flex items-center gap-10 text-base font-medium text-gray-300">
+      <nav class="hidden lg:flex h-20 md:h-24 py-4 items-center gap-10 text-base font-medium text-gray-300">
 
         <a href="index.html" class="hover:text-yellow-400 transition">
           Home
@@ -64,9 +65,11 @@
         </button>
 
         <!-- Book Button -->
-        <button class="premium-btn px-6 py-3 rounded-full text-black font-semibold hidden md:block">
-          Book Table
-        </button>
+                <a
+        class="hidden md:flex premium-btn"
+        >
+        Book Table
+        </a>
 
         <!-- Hamburger -->
         <button
@@ -133,7 +136,7 @@
   />
 
   <!-- Overlay -->
-  <div class="menu-overlay absolute inset-0 bg-black/45"></div>
+ <div class="absolute inset-0 bg-black/25"></div>
 </div>
 
   <div class="relative z-10 max-w-7xl mx-auto px-5 sm:px-6 lg:px-10">
@@ -161,55 +164,11 @@
 
 
     <!-- FILTER BUTTONS -->
-    <div class="flex flex-wrap justify-center gap-4 mb-16">
-
-      <button
-        class="filter-btn active-filter"
-        data-filter="all"
-      >
-        All Menu
-      </button>
-
-      <button
-        class="filter-btn"
-        data-filter="burger"
-      >
-        Burgers
-      </button>
-
-      <button
-        class="filter-btn"
-        data-filter="pizza"
-      >
-        Pizza
-      </button>
-
-      <button
-        class="filter-btn"
-        data-filter="salad"
-      >
-        Salads
-      </button>
-
-      <button
-        class="filter-btn"
-        data-filter="drink"
-      >
-        Drinks
-      </button>
-
-      <button
-        class="filter-btn"
-        data-filter="dessert"
-        >
-        Desserts
-        </button>
-
-    </div>
+    <div class="flex flex-wrap justify-center gap-3 md:gap-4 mb-12 px-4"></div>
 
 
     <!-- MENU GRID -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
 
       <!-- CARD -->
       <div class="menu-item burger glass-card rounded-[32px] overflow-hidden group">
@@ -386,7 +345,7 @@
     </div>
 
   </div>
-
+  
 </section>
 
 <a

@@ -22,15 +22,16 @@
       <!-- Logo -->
       <div class="flex items-center gap-3">
         <img
-          src="./images/Mercylogo.png"
-          alt="Logo"
-          class="w-16 h-16 md:w-20 md:h-20 object-contain"
-        />
+      src="./images/Mercylogo.png"
+      class="w-12 h-12 md:w-20 md:h-20"
+    >
+
+        
       </div>
 
 
       <!-- Desktop Nav -->
-      <nav class="hidden lg:flex items-center gap-10 text-base font-medium text-gray-300">
+      <nav class="hidden lg:flex h-20 md:h-24 py-4 items-center gap-10 text-base font-medium text-gray-300">
 
         <a href="index.html" class="hover:text-yellow-400 transition">
           Home
@@ -63,9 +64,11 @@
         </button>
 
         <!-- Book Button -->
-        <button class="premium-btn px-6 py-3 rounded-full text-black font-semibold hidden md:block">
-          Book Table
-        </button>
+                <a
+        class="hidden md:flex premium-btn"
+        >
+        Book Table
+        </a>
 
         <!-- Hamburger -->
         <button
