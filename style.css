@@ -128,3 +128,23 @@ body{
 .dish-btn:hover{
   transform:scale(1.03);
 }
+
+.light-mode {
+  background: #f8f8f8;
+  color: #544747;
+}
+
+.light-mode nav,
+.light-mode header {
+  background: rgba(130, 79, 79, 0.9);
+}
+
+.light-mode h1,
+.light-mode h2,
+.light-mode h3 {
+  color: #6c6385d4;
+}
+
+.light-mode p {
+  color: #544e4e;
+}

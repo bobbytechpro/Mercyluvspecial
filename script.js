@@ -53,3 +53,25 @@ if (allMenuBtn && fullMenu) {
     });
   });
 }
+
+const darkModeToggle = document.getElementById("darkModeToggle");
+const body = document.getElementById("body");
+
+if(localStorage.getItem("theme") === "light"){
+  body.classList.add("light-mode");
+  darkModeToggle.innerHTML = "☀️";
+}
+
+darkModeToggle.addEventListener("click", () => {
+
+  body.classList.toggle("light-mode");
+
+  if(body.classList.contains("light-mode")){
+    localStorage.setItem("theme", "light");
+    darkModeToggle.innerHTML = "☀️";
+  } else {
+    localStorage.setItem("theme", "dark");
+    darkModeToggle.innerHTML = "🌙";
+  }
+
+});

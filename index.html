@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="text-white">
+<body id="body" class="text-white">
 
   <!-- ========================= -->
 <!-- PREMIUM NAVBAR -->
@@ -23,16 +23,11 @@
 
 <header
   class="
-  fixed
-  top-0
-  left-0
-  w-full
-  z-[9999]
-  bg-black/40
-  backdrop-blur-2xl
-  border-b
-  border-white/10
-  "
+  fixed top-0 left-0 w-full z-[9999]
+  bg-black/70 backdrop-blur-xl
+  border-b border-white/10"
+
+  
 >
 
   <div
@@ -305,27 +300,62 @@
 <!-- ========================= -->
 <!-- HERO SECTION -->
 <!-- ========================= -->
+ <!-- HERO SECTION -->
+<section
+  id="home"
+  class="relative min-h-screen bg-black overflow-hidden flex items-center"
+>
 
-<!-- HERO SECTION -->
-<section class="relative overflow-hidden bg-black">
+  <!-- Background Image -->
+  <div class="absolute inset-0">
+    <img
+  src="./images/menuanotherbg.jpg"
+  alt=""
+  class="absolute inset-0 w-full h-full object-cover opacity-40"
+/>
+  </div>
+
+  <!-- Dark Overlay -->
+  <div class="absolute inset-0 bg-black/40"></div>
+
+  <!-- Gradient Glow -->
+  <div
+    class="absolute top-20 left-0 w-[500px] h-[500px] bg-yellow-500/10 blur-[180px] rounded-full"
+  ></div>
 
   <div
-    class="max-w-7xl mx-auto px-6 lg:px-12 py-12 lg:py-20"
+    class="absolute bottom-0 right-0 w-[500px] h-[500px] bg-yellow-400/10 blur-[180px] rounded-full"
+  ></div>
+
+  <!-- Grid Pattern -->
+  <div
+    class="absolute inset-0 opacity-[0.03]"
+    style="
+      background-image:
+      linear-gradient(to right,#ffffff 1px,transparent 1px),
+      linear-gradient(to bottom,#ffffff 1px,transparent 1px);
+      background-size:80px 80px;
+    "
+  ></div>
+
+  <!-- Container -->
+  <div
+    class="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 w-full pt-36 md:pt-28 pb-20"
   >
 
-    <div
-      class="grid lg:grid-cols-2 gap-12 items-center"
-    >
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
 
       <!-- LEFT CONTENT -->
       <div>
 
-        <p class="text-yellow-400 tracking-[8px] uppercase mb-6">
+        <p
+          class="text-yellow-400 uppercase tracking-[8px] text-sm mb-6"
+        >
           Authentic African Cuisine
         </p>
 
         <h1
-          class="text-5xl md:text-6xl xl:text-7xl font-black leading-tight mb-6"
+          class="text-5xl md:text-6xl xl:text-7xl font-black leading-[1.05] mb-6"
         >
           Taste Africa's
 
@@ -336,17 +366,17 @@
         </h1>
 
         <p
-          class="text-gray-300 text-lg leading-relaxed max-w-xl mb-10"
+          class="text-gray-300 text-lg md:text-xl max-w-xl leading-relaxed mb-10"
         >
-          Experience premium African dishes crafted with
-          fresh ingredients, expert chefs, and unforgettable taste.
+          Experience premium African dishes crafted with fresh ingredients,
+          expert chefs, and unforgettable taste.
         </p>
 
         <div class="flex flex-wrap gap-4">
 
           <a
             href="menu.html"
-            class="premium-btn px-8 py-4 rounded-full"
+            class="bg-yellow-400 text-black font-bold px-8 py-4 rounded-full hover:scale-105 transition"
           >
             Order Now
           </a>
@@ -366,15 +396,27 @@
       <div class="flex justify-center">
 
         <div
-          class="w-full max-w-[500px] h-[500px] rounded-[40px] overflow-hidden"
+          class="relative w-full max-w-[520px]"
         >
 
-          <img
-            id="heroImage"
-            src="./images/hero1.jpeg"
-            alt=""
-            class="w-full h-full object-cover"
+          <!-- Decorative Glow -->
+          <div
+            class="absolute inset-0 bg-yellow-500/10 blur-3xl rounded-[50px]"
+          ></div>
+
+          <!-- Image Card -->
+          <div
+            class="relative rounded-[40px] overflow-hidden border border-white/10 bg-white/5 backdrop-blur-xl"
           >
+
+            <img
+              id="heroImage"
+              src="./images/hero1.jpeg"
+              alt="Mercyluvspecial Kitchen"
+              class="w-full h-[420px] md:h-[520px] object-cover"
+            />
+
+          </div>
 
         </div>
 
@@ -385,6 +427,7 @@
   </div>
 
 </section>
+
 <!-- ========================= -->
 <!-- WHY CHOOSE US -->
 <!-- ========================= -->
@@ -873,6 +916,321 @@
         </h3>
         <p class="text-gray-400">
           ₦5,000
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<!-- TESTIMONIALS -->
+<section class="py-24 bg-[#080808]">
+
+  <div class="max-w-7xl mx-auto px-6 lg:px-12">
+
+    <!-- Section Header -->
+    <div class="text-center mb-16">
+
+      <p class="text-yellow-400 uppercase tracking-[8px] mb-4">
+        Customer Reviews
+      </p>
+
+      <h2 class="text-4xl md:text-6xl font-black mb-6">
+        What Our Guests Say
+      </h2>
+
+      <p class="text-gray-400 max-w-2xl mx-auto">
+        Thousands of satisfied customers enjoy our meals,
+        premium service, and unforgettable dining experience.
+      </p>
+
+    </div>
+
+    <!-- Cards -->
+    <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
+
+      <!-- CARD 1 -->
+      <div
+        class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-[30px] p-8 hover:border-yellow-400/40 transition duration-500"
+      >
+
+        <div class="text-yellow-400 text-2xl mb-5">
+          ★★★★★
+        </div>
+
+        <p class="text-gray-300 mb-8 leading-relaxed">
+          The food was incredible. Every meal tasted fresh and authentic.
+          Definitely one of the best dining experiences I've had.
+        </p>
+
+        <div class="flex items-center gap-4">
+
+          <div
+            class="w-14 h-14 rounded-full bg-yellow-400 text-black flex items-center justify-center font-bold"
+          >
+            A
+          </div>
+
+          <div>
+            <h4 class="font-bold">
+              Ada Martins
+            </h4>
+
+            <p class="text-gray-400 text-sm">
+              Lagos
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- CARD 2 -->
+      <div
+        class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-[30px] p-8 hover:border-yellow-400/40 transition duration-500"
+      >
+
+        <div class="text-yellow-400 text-2xl mb-5">
+          ★★★★★
+        </div>
+
+        <p class="text-gray-300 mb-8 leading-relaxed">
+          Excellent customer service and amazing meals.
+          The presentation was premium from start to finish.
+        </p>
+
+        <div class="flex items-center gap-4">
+
+          <div
+            class="w-14 h-14 rounded-full bg-yellow-400 text-black flex items-center justify-center font-bold"
+          >
+            J
+          </div>
+
+          <div>
+            <h4 class="font-bold">
+              John Peter
+            </h4>
+
+            <p class="text-gray-400 text-sm">
+              Abuja
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- CARD 3 -->
+      <div
+        class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-[30px] p-8 hover:border-yellow-400/40 transition duration-500"
+      >
+
+        <div class="text-yellow-400 text-2xl mb-5">
+          ★★★★★
+        </div>
+
+        <p class="text-gray-300 mb-8 leading-relaxed">
+          Mercyluvspecial Kitchen never disappoints.
+          The flavors, quality and hospitality are unmatched.
+        </p>
+
+        <div class="flex items-center gap-4">
+
+          <div
+            class="w-14 h-14 rounded-full bg-yellow-400 text-black flex items-center justify-center font-bold"
+          >
+            C
+          </div>
+
+          <div>
+            <h4 class="font-bold">
+              Chioma Grace
+            </h4>
+
+            <p class="text-gray-400 text-sm">
+              Lekki
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<!-- ABOUT MERCYLUVSPECIAL KITCHEN -->
+<section class="py-24 bg-black relative overflow-hidden">
+
+  <!-- Glow Effects -->
+  <div class="absolute top-0 right-0 w-96 h-96 bg-yellow-500/10 blur-[150px] rounded-full"></div>
+  <div class="absolute bottom-0 left-0 w-96 h-96 bg-yellow-500/10 blur-[150px] rounded-full"></div>
+
+  <div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
+
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+      <!-- IMAGE SIDE -->
+      <div class="relative">
+
+        <div
+          class="absolute -inset-4 bg-yellow-500/10 blur-3xl rounded-[40px]"
+        ></div>
+
+        <div
+          class="relative rounded-[40px] overflow-hidden border border-white/10"
+        >
+
+          <img
+            src="./images/about-chef.jpg"
+            alt="Mercyluvspecial Kitchen"
+            class="w-full h-[650px] object-cover"
+          >
+
+        </div>
+
+        <!-- Floating Experience Card -->
+        <div
+          class="absolute bottom-8 left-8 bg-black/80 backdrop-blur-xl border border-white/10 rounded-3xl px-8 py-6"
+        >
+
+          <h3 class="text-4xl font-black text-yellow-400">
+            10+
+          </h3>
+
+          <p class="text-gray-300">
+            Years Experience
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- CONTENT SIDE -->
+      <div>
+
+        <p class="text-yellow-400 uppercase tracking-[8px] mb-5">
+          About Us
+        </p>
+
+        <h2 class="text-4xl md:text-6xl font-black leading-tight mb-8">
+          Crafting
+          <span class="text-yellow-400">
+            Exceptional African Cuisine
+          </span>
+        </h2>
+
+        <p class="text-gray-300 text-lg leading-relaxed mb-6">
+          At Mercyluvspecial Kitchen, we believe food is more than a meal.
+          It is an experience that brings people together through authentic
+          African flavors, premium ingredients, and unforgettable hospitality.
+        </p>
+
+        <p class="text-gray-400 leading-relaxed mb-10">
+          Every dish is carefully prepared with passion and attention to detail.
+          From refreshing natural drinks to signature meals, we are committed
+          to delivering quality, freshness, and excellence in every bite.
+        </p>
+
+        <!-- FEATURES -->
+        <div class="grid sm:grid-cols-2 gap-5 mb-10">
+
+          <div class="glass-card p-5 rounded-3xl">
+            <h4 class="font-bold text-yellow-400 mb-2">
+              Premium Ingredients
+            </h4>
+            <p class="text-gray-400 text-sm">
+              Freshly sourced ingredients for every meal.
+            </p>
+          </div>
+
+          <div class="glass-card p-5 rounded-3xl">
+            <h4 class="font-bold text-yellow-400 mb-2">
+              Expert Chefs
+            </h4>
+            <p class="text-gray-400 text-sm">
+              Skilled culinary professionals creating excellence.
+            </p>
+          </div>
+
+          <div class="glass-card p-5 rounded-3xl">
+            <h4 class="font-bold text-yellow-400 mb-2">
+              Fast Delivery
+            </h4>
+            <p class="text-gray-400 text-sm">
+              Reliable delivery to your doorstep.
+            </p>
+          </div>
+
+          <div class="glass-card p-5 rounded-3xl">
+            <h4 class="font-bold text-yellow-400 mb-2">
+              Luxury Experience
+            </h4>
+            <p class="text-gray-400 text-sm">
+              Beautiful presentation and exceptional service.
+            </p>
+          </div>
+
+        </div>
+
+        <a
+          href="contact.html"
+          class="premium-btn px-8 py-4 rounded-full"
+        >
+          Learn More
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<!-- STATS -->
+<section class="py-16 bg-[#080808]">
+
+  <div class="max-w-7xl mx-auto px-6 lg:px-12">
+
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+
+      <div class="text-center">
+        <h3 class="text-5xl font-black text-yellow-400 mb-3">
+          5K+
+        </h3>
+        <p class="text-gray-400">
+          Happy Customers
+        </p>
+      </div>
+
+      <div class="text-center">
+        <h3 class="text-5xl font-black text-yellow-400 mb-3">
+          50+
+        </h3>
+        <p class="text-gray-400">
+          Signature Dishes
+        </p>
+      </div>
+
+      <div class="text-center">
+        <h3 class="text-5xl font-black text-yellow-400 mb-3">
+          10+
+        </h3>
+        <p class="text-gray-400">
+          Years Experience
+        </p>
+      </div>
+
+      <div class="text-center">
+        <h3 class="text-5xl font-black text-yellow-400 mb-3">
+          4.9★
+        </h3>
+        <p class="text-gray-400">
+          Customer Rating
         </p>
       </div>
 
