@@ -78,19 +78,23 @@ darkModeToggle.addEventListener("click", () => {
 
 // SEARCH MENU
 
-const searchInput = document.getElementById("menuSearch");
-const menuItems = document.querySelectorAll(".menu-item");
+const menuSearch =
+document.getElementById("menuSearch");
 
-searchInput.addEventListener("keyup", () => {
+const menuItems =
+document.querySelectorAll(".menu-item");
 
-  const value = searchInput.value.toLowerCase();
+menuSearch.addEventListener("input", () => {
+
+  const searchValue =
+  menuSearch.value.toLowerCase();
 
   menuItems.forEach(item => {
 
     const foodName =
-      item.getAttribute("data-name").toLowerCase();
+    item.dataset.name.toLowerCase();
 
-    if(foodName.includes(value)){
+    if(foodName.includes(searchValue)){
 
       item.style.display = "block";
 
@@ -103,3 +107,57 @@ searchInput.addEventListener("keyup", () => {
   });
 
 });
+  
+
+const menuSearch = document.getElementById("menuSearch");
+
+if(menuSearch){
+
+  menuSearch.addEventListener("input", function(){
+
+    const searchValue =
+      this.value.toLowerCase();
+
+    const menuItems =
+      document.querySelectorAll(".menu-item");
+
+    let found = 0;
+
+    menuItems.forEach(item => {
+
+      const foodName =
+        item.dataset.name.toLowerCase();
+
+      if(foodName.includes(searchValue)){
+
+        item.style.display = "block";
+        found++;
+
+      }else{
+
+        item.style.display = "none";
+
+      }
+
+    });
+
+    const noResult =
+      document.getElementById("noResult");
+
+    if(noResult){
+
+      if(found === 0){
+
+        noResult.classList.remove("hidden");
+
+      }else{
+
+        noResult.classList.add("hidden");
+
+      }
+
+    }
+
+  });
+
+}

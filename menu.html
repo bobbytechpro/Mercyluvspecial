@@ -346,27 +346,39 @@
 
     <!-- Search -->
 
-    <div class="max-w-2xl mx-auto mb-10">
+    <div class="relative max-w-3xl mx-auto mb-12">
 
-     <input
-  type="text"
-  id="menuSearch"
-  placeholder="Search food..."
-  class="
-  w-full
-  bg-white/5
-  border
-  border-white/10
-  rounded-full
-  px-8
-  py-4
-  outline-none
-  focus:border-yellow-400
-  "
->
-       
+  <span
+    class="absolute left-6 top-1/2 -translate-y-1/2 text-gray-400 text-xl"
+  >
+    🔍
+  </span>
 
-    </div>
+  <div class="relative max-w-xl mx-auto mb-12">
+
+  <input
+    type="text"
+    id="searchInput"
+    placeholder="Search food, drinks, desserts..."
+    class="
+      w-full
+      bg-white/5
+      border
+      border-white/10
+      rounded-full
+      py-4
+      pl-14
+      pr-6
+      text-white
+      outline-none
+      focus:border-yellow-400
+    "
+  >
+
+
+</div>
+
+</div>
 
     <!-- Filter Buttons -->
 
@@ -420,6 +432,12 @@
   gap-6
   "
  >
+ <p
+  id="noResult"
+  class="hidden text-center text-gray-400 text-xl mt-12"
+>
+  No food found 🍽️
+</p>
   
   <div
   class="menu-item rice group bg-[#111]
@@ -429,6 +447,7 @@
   transition duration-500
   hover:border-yellow-400/40"
   data-name="jollof rice"
+
   >
 
   <div class="relative">
@@ -485,7 +504,7 @@
   overflow-hidden
   transition duration-500
   hover:border-yellow-400/40"
-  data-name="jollof rice"
+   data-name="egusi soup"
 >
 
   <div class="relative">
@@ -541,7 +560,7 @@
   overflow-hidden
   transition duration-500
   hover:border-yellow-400/40"
-  data-name="jollof rice"
+   data-name="egusi soup"
 >
 
   <div class="relative">
@@ -574,7 +593,7 @@
   <div class="p-5">
 
     <h3 class="text-xl font-bold mb-2">
-      Jollof Rice
+      fried Rice
     </h3>
 
     <p class="text-gray-400 text-sm mb-4">
