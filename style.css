@@ -165,3 +165,76 @@ body{
 .gallery-card:hover img{
   transform:scale(1.1);
 }
+
+.premium-btn{
+  position: relative;
+  overflow: hidden;
+  transition: all .4s ease;
+}
+
+.premium-btn::before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:-100%;
+  width:100%;
+  height:100%;
+  background:linear-gradient(
+    90deg,
+    transparent,
+    rgba(255,255,255,.3),
+    transparent
+  );
+  transition:.6s;
+}
+
+.premium-btn:hover::before{
+  left:100%;
+}
+
+.premium-btn:hover{
+  transform:translateY(-3px);
+}
+
+.filter-btn{
+  padding:14px 28px;
+  border-radius:999px;
+  background:rgba(255,255,255,.05);
+  border:1px solid rgba(255,255,255,.1);
+  transition:.3s;
+}
+
+.filter-btn:hover{
+  border-color:#facc15;
+}
+
+.active-filter{
+  background:#facc15;
+  color:#000;
+}
+
+.menu-item{
+  transform:translateY(0);
+  transition:all .45s ease;
+}
+
+.menu-item:hover{
+  transform:translateY(-10px);
+  box-shadow:
+  0 20px 60px rgba(250,204,21,.15);
+}
+
+.menu-item{
+  animation:fadeUp .8s ease forwards;
+}
+
+@keyframes fadeUp{
+  from{
+    opacity:0;
+    transform:translateY(30px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}

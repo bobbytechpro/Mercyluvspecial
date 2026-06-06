@@ -75,3 +75,31 @@ darkModeToggle.addEventListener("click", () => {
   }
 
 });
+
+// SEARCH MENU
+
+const searchInput = document.getElementById("menuSearch");
+const menuItems = document.querySelectorAll(".menu-item");
+
+searchInput.addEventListener("keyup", () => {
+
+  const value = searchInput.value.toLowerCase();
+
+  menuItems.forEach(item => {
+
+    const foodName =
+      item.getAttribute("data-name").toLowerCase();
+
+    if(foodName.includes(value)){
+
+      item.style.display = "block";
+
+    } else {
+
+      item.style.display = "none";
+
+    }
+
+  });
+
+});

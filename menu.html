@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MercyLuvSpecialKitchen | Premium Food Menu</title>
 
-<script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -9,499 +13,587 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
+</head>
 
+<body id="body" class="text-white">
 
-  <body class="text-white">
-   <!-- Navbar -->
-
-<!-- ========================= -->
-
+  <!-- ========================= -->
 <!-- PREMIUM NAVBAR -->
-
 <!-- ========================= -->
 
 <header
   class="
   fixed top-0 left-0 w-full z-[9999]
-  bg-black/40 backdrop-blur-2xl
-  border-b border-white/10
-  "
+  bg-black/70 backdrop-blur-xl
+  border-b border-white/10"
+
+  
 >
 
   <div
     class="
-    max-w-7xl mx-auto
-    px-5 md:px-8 lg:px-10
+    max-w-7xl
+    mx-auto
+    px-5
+    md:px-8
+    lg:px-10
     "
   >
 
-```
-<div
-  class="
-  h-20 md:h-24
-  flex items-center justify-between
-  "
->
-
-  <!-- LOGO -->
-  <a
-    href="index.html"
-    class="flex items-center"
-  >
-
-    <img
-      src="./images/Mercylogo.png"
-      alt="MercyLuv"
+    <div
       class="
-      h-14 md:h-20
-      w-auto
-      object-contain
+      h-20
+      md:h-24
+      flex
+      items-center
+      justify-between
       "
     >
 
-  </a>
+      <!-- LOGO -->
+      <a
+        href="index.html"
+        class="flex items-center"
+      >
 
-  <!-- DESKTOP NAVIGATION -->
-  <nav
-    class="
-    hidden lg:flex
-    items-center
-    gap-10
-    "
-  >
+        <div>
 
-    <a
-      href="index.html"
-      class="text-gray-300 hover:text-yellow-400 transition"
-    >
-      Home
-    </a>
+          <h1
+            class="
+            text-xl
+            md:text-3xl
+            font-black
+            text-yellow-400
+            leading-none
+            "
+          >
+            Mercyluvspecial
+          </h1>
 
-    <a
-      href="menu.html"
-      class="text-gray-300 hover:text-yellow-400 transition"
-    >
-      Menu
-    </a>
+          <p
+            class="
+            text-[10px]
+            md:text-xs
+            uppercase
+            tracking-[6px]
+            text-white
+            mt-1
+            "
+          >
+            Kitchen
+          </p>
 
-    <a
-      href="specials.html"
-      class="text-yellow-400"
-    >
-      Specials
-    </a>
+        </div>
 
-    <a
-      href="contact.html"
-      class="text-gray-300 hover:text-yellow-400 transition"
-    >
-      Contact
-    </a>
+      </a>
 
-  </nav>
+      <!-- DESKTOP MENU -->
+      <nav
+        class="
+        hidden
+        lg:flex
+        items-center
+        gap-10
+        "
+      >
 
-  <!-- RIGHT SIDE -->
-  <div
-    class="
-    flex items-center gap-3
-    "
-  >
+        <a href="index.html" class="nav-link">
+          Home
+        </a>
 
-    <!-- DARK MODE -->
-    <button
-      id="darkModeToggle"
-      class="
-      w-11 h-11 md:w-12 md:h-12
-      rounded-full
-      bg-white/10
-      border border-white/10
-      backdrop-blur-xl
-      flex items-center justify-center
-      text-lg
-      "
-    >
-      🌙
-    </button>
+        <a href="menu.html" class="nav-link">
+          Menu
+        </a>
 
-    <!-- BOOK TABLE -->
-    <a
-      href="#"
-      class="
-      hidden md:flex
-      items-center justify-center
-      px-6 py-3
-      rounded-full
-      bg-yellow-400
-      text-black
-      font-semibold
-      hover:scale-105
-      transition
-      "
-    >
-      Book Table
-    </a>
+        <a href="specials.html" class="nav-link">
+          Specials
+        </a>
 
-    <!-- MOBILE MENU BUTTON -->
-    <button
-      id="menuBtn"
-      class="
-      lg:hidden
-      flex flex-col gap-1
-      "
-    >
+        <a href="contact.html" class="nav-link">
+          Contact
+        </a>
 
-      <span class="w-7 h-[3px] bg-white rounded-full"></span>
-      <span class="w-7 h-[3px] bg-white rounded-full"></span>
-      <span class="w-7 h-[3px] bg-white rounded-full"></span>
+      </nav>
 
-    </button>
+      <!-- RIGHT SIDE -->
+      <div
+        class="
+        flex
+        items-center
+        gap-3
+        "
+      >
 
-  </div>
+        <!-- DARK MODE -->
+        <button
+          id="darkModeToggle"
+          class="
+          w-11
+          h-11
+          md:w-12
+          md:h-12
+          rounded-full
+          bg-white/10
+          border
+          border-white/10
+          flex
+          items-center
+          justify-center
+          text-lg
+          "
+        >
+          🌙
+        </button>
 
-</div>
+        <!-- BOOK TABLE -->
+        <a
+          href="#"
+          class="
+          hidden
+          md:flex
+          items-center
+          justify-center
+          px-6
+          py-3
+          rounded-full
+          bg-yellow-400
+          text-black
+          font-semibold
+          hover:scale-105
+          transition
+          "
+        >
+          Book Table
+        </a>
 
+        <!-- HAMBURGER -->
+        <button
+          id="menuBtn"
+          class="
+          lg:hidden
+          flex
+          flex-col
+          gap-1
+          "
+        >
+
+          <span class="w-7 h-[3px] bg-white rounded-full"></span>
+          <span class="w-7 h-[3px] bg-white rounded-full"></span>
+          <span class="w-7 h-[3px] bg-white rounded-full"></span>
+
+        </button>
+
+      </div>
+
+    </div>
 
   </div>
 
 </header>
 
 <!-- ========================= -->
-
 <!-- MOBILE MENU -->
-
 <!-- ========================= -->
 
 <div
-  id="mobileMenu"
-  class="
-  fixed
-  top-0
-  right-0
-  h-screen
-  w-[85%]
-  max-w-[340px]
-  bg-[#080808]
-  backdrop-blur-2xl
-  border-l border-white/10
-  z-[10000]
-  translate-x-full
-  transition-all
-  duration-500
-  "
->
+    id="mobileMenu"
+    class="
+    fixed
+    top-0
+    right-0
+    h-screen
+    w-[85%]
+    max-w-[340px]
+    bg-[#050505]
+    border-l
+    border-white/10
+    translate-x-full
+    transition-all
+    duration-500
+    z-[10000]
+    "
+  >
 
   <div
     class="
-    h-full
-    flex flex-col
+    p-6
+    flex
+    items-center
+    justify-between
+    border-b
+    border-white/10
     "
   >
 
-<!-- TOP -->
-<div
-  class="
-  flex items-center justify-between
-  p-6
-  border-b border-white/10
-  "
->
+    <div>
 
-  <img
-    src="./images/Mercylogo.png"
-    class="h-12 w-auto"
-  >
+      <h1
+        class="
+        text-xl
+        font-black
+        text-yellow-400
+        "
+      >
+        Mercyluvspecial
+      </h1>
 
-  <button
-    id="closeMenu"
-    class="text-4xl text-white"
-  >
-    ×
-  </button>
+      <p
+        class="
+        text-[10px]
+        uppercase
+        tracking-[5px]
+        "
+      >
+        Kitchen
+      </p>
 
-</div>
+    </div>
 
-<!-- LINKS -->
-<div
-  class="
-  flex flex-col
-  px-8 py-10
-  gap-8
-  text-lg
-  "
->
-
-  <a href="index.html">Home</a>
-  <a href="menu.html">Menu</a>
-  <a href="specials.html">Specials</a>
-  <a href="contact.html">Contact</a>
-
-  <a
-    href="#"
-    class="
-    mt-4
-    bg-yellow-400
-    text-black
-    text-center
-    py-4
-    rounded-full
-    font-semibold
-    "
-  >
-    Book Table
-  </a>
-
-</div>
-
+    <button
+      id="closeMenu"
+      class="
+      text-4xl
+      text-white
+      "
+    >
+      ×
+    </button>
 
   </div>
 
+  <nav
+    class="
+    flex
+    flex-col
+    p-8
+    gap-8
+    text-lg
+    "
+  >
+
+    <a href="index.html">Home</a>
+
+    <a href="menu.html">Menu</a>
+
+    <a href="specials.html">Specials</a>
+
+    <a href="contact.html">Contact</a>
+
+    <a
+      href="#"
+      class="
+      mt-4
+      bg-yellow-400
+      text-black
+      text-center
+      py-4
+      rounded-full
+      font-semibold
+      "
+    >
+      Book Table
+    </a>
+
+  </nav>
+
 </div>
 
-<!-- Premium Menu Section -->
-
-<!-- PREMIUM FILTER MENU -->
-<section class="relative pt-32 pb-24 overflow-hidden">
+<!-- MENU HERO -->
+<section
+  class="relative min-h-[70vh] flex items-center justify-center overflow-hidden pt-32"
+>
 
   <!-- Background -->
-  <!-- Premium Background -->
-<div class="absolute inset-0">
   <img
     src="./images/menuanotherbg.jpg"
-    alt="Premium Restaurant"
-    class="w-full h-full object-cover"
-  />
+    alt=""
+    class="absolute inset-0 w-full h-full object-cover"
+  >
 
   <!-- Overlay -->
- <div class="absolute inset-0 bg-black/25"></div>
-</div>
+  <div class="absolute inset-0 bg-black/70"></div>
 
-  <div class="relative z-10 max-w-7xl mx-auto px-5 sm:px-6 lg:px-10">
+  <!-- Content -->
+  <div class="relative z-10 text-center px-6 max-w-5xl">
 
-    <!-- Heading -->
-    <div class="text-center mb-16">
+    <p class="text-yellow-400 uppercase tracking-[8px] mb-6">
+      Our Delicious Collection
+    </p>
 
-      <p class="uppercase tracking-[6px] text-yellow-400 text-sm mb-5">
-        Chef Special Menu
-      </p>
+    <h1
+      class="text-5xl md:text-7xl font-black mb-6"
+    >
+      Explore Our
+      <span class="text-yellow-400">
+        Menu
+      </span>
+    </h1>
 
-      <h2 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white leading-tight mb-6">
-        Explore Our
-        <span class="gold-text block">
-          Premium Foods
-        </span>
-      </h2>
+    <p
+      class="text-gray-300 text-lg md:text-xl max-w-3xl mx-auto"
+    >
+      Discover handcrafted African dishes,
+      premium drinks and chef specials prepared
+      with fresh ingredients and unforgettable flavors.
+    </p>
 
-      <p class="text-gray-300 max-w-3xl mx-auto text-base sm:text-lg leading-8">
-        Discover handcrafted meals, luxury flavors,
-        and premium restaurant experience.
-      </p>
+  </div>
+
+</section>
+<section class="py-16 bg-[#080808]">
+
+  <div class="max-w-7xl mx-auto px-6 lg:px-12">
+
+    <!-- Search -->
+
+    <div class="max-w-2xl mx-auto mb-10">
+
+     <input
+  type="text"
+  id="menuSearch"
+  placeholder="Search food..."
+  class="
+  w-full
+  bg-white/5
+  border
+  border-white/10
+  rounded-full
+  px-8
+  py-4
+  outline-none
+  focus:border-yellow-400
+  "
+>
+       
 
     </div>
 
+    <!-- Filter Buttons -->
 
-    <!-- FILTER BUTTONS -->
-    <div class="flex flex-wrap justify-center gap-3 md:gap-4 mb-12 px-4"></div>
+    <div class="flex flex-wrap justify-center gap-4">
 
+      <button class="filter-btn active-filter" data-filter="all">
+        All Menu
+      </button>
 
-    <!-- MENU GRID -->
-    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+      <button class="filter-btn" data-filter="rice">
+        Rice
+      </button>
 
-      <!-- CARD -->
-      <div class="menu-item burger glass-card rounded-[32px] overflow-hidden group">
+      <button class="filter-btn" data-filter="soup">
+        Soup
+      </button>
 
-        <div class="overflow-hidden relative">
-          <img
-            src="./images/hero2.jpeg"
-            class="w-full h-72 object-cover group-hover:scale-110 transition duration-700"
-            alt=""
-          />
+      <button class="filter-btn" data-filter="grill">
+        Grills
+      </button>
 
-          <div class="absolute top-5 right-5 bg-yellow-400 text-black px-4 py-2 rounded-full font-bold">
-            $24
-          </div>
-        </div>
+      <button class="filter-btn" data-filter="drink">
+        Drinks
+      </button>
 
-        <div class="p-7">
-
-          <h3 class="text-3xl font-bold text-white mb-4">
-             burger
-          </h3>
-
-          <p class="text-gray-300 leading-7 mb-6">
-            Juicy grilled burger layered with premium cheese,
-            crispy vegetables, and signature sauce.
-          </p>
-
-          <button class="premium-btn w-full py-4 rounded-full text-black font-semibold">
-            Order Now
-          </button>
-
-        </div>
-
-      </div>
-
-
-      <!-- CARD -->
-      <div class="menu-item pizza glass-card rounded-[32px] overflow-hidden group">
-
-        <div class="overflow-hidden relative">
-          <img
-            src="./images/hero1.jpeg"
-            class="w-full h-72 object-cover group-hover:scale-110 transition duration-700"
-            alt=""
-          />
-
-          <div class="absolute top-5 right-5 bg-yellow-400 text-black px-4 py-2 rounded-full font-bold">
-            $30
-          </div>
-        </div>
-
-        <div class="p-7">
-
-          <h3 class="text-3xl font-bold text-white mb-4">
-             pizza
-          </h3>
-
-          <p class="text-gray-300 leading-7 mb-6">
-            Stone-baked pizza topped with mozzarella,
-            herbs, and organic ingredients.
-          </p>
-
-          <button class="premium-btn w-full py-4 rounded-full text-black font-semibold">
-            Order Now
-          </button>
-
-        </div>
-
-      </div>
-
-       <div class="menu-item burger glass-card rounded-[32px] overflow-hidden group">
-
-        <div class="overflow-hidden relative">
-          <img
-            src="./images/hero3.jpeg"
-            class="w-full h-72 object-cover group-hover:scale-110 transition duration-700"
-            alt=""
-          />
-
-          <div class="absolute top-5 right-5 bg-yellow-400 text-black px-4 py-2 rounded-full font-bold">
-            $24
-          </div>
-        </div>
-
-        <div class="p-7">
-
-          <h3 class="text-3xl font-bold text-white mb-4">
-             burger
-          </h3>
-
-          <p class="text-gray-300 leading-7 mb-6">
-            Juicy grilled burger layered with premium cheese,
-            crispy vegetables, and signature sauce.
-          </p>
-
-          <button class="premium-btn w-full py-4 rounded-full text-black font-semibold">
-            Order Now
-          </button>
-
-        </div>
-
-      </div>
-
-
-      <!-- CARD -->
-      <div class="menu-item salad glass-card rounded-[32px] overflow-hidden group">
-
-        <div class="overflow-hidden relative">
-          <img
-            src="./images/menu4.jpg"
-            class="w-full h-72 object-cover group-hover:scale-110 transition duration-700"
-            alt=""
-          />
-
-          <div class="absolute top-5 right-5 bg-yellow-400 text-black px-4 py-2 rounded-full font-bold">
-            $18
-          </div>
-        </div>
-
-        <div class="p-7">
-
-          <h3 class="text-3xl font-bold text-white mb-4">
-            salad
-          </h3>
-
-          <p class="text-gray-300 leading-7 mb-6">
-            Fresh vegetables mixed with luxury dressing
-            and premium healthy ingredients.
-          </p>
-
-          <button class="premium-btn w-full py-4 rounded-full text-black font-semibold">
-            Order Now
-          </button>
-
-        </div>
-
-      </div>
-
-
-      <!-- CARD -->
-      <div class="menu-item drink glass-card rounded-[32px] overflow-hidden group">
-
-        <div class="overflow-hidden relative">
-          <img
-            src="./images/menu4.jpg"
-            class="w-full h-72 object-cover group-hover:scale-110 transition duration-700"
-            alt=""
-          />
-
-          <div class="absolute top-5 right-5 bg-yellow-400 text-black px-4 py-2 rounded-full font-bold">
-            $12
-          </div>
-        </div>
-
-        <div class="p-7">
-
-          <h3 class="text-3xl font-bold text-white mb-4">
-            drink
-          </h3>
-
-          <p class="text-gray-300 leading-7 mb-6">
-            Fresh tropical fruit drink with premium
-            healthy ingredients and natural flavor.
-          </p>
-
-          <button class="premium-btn w-full py-4 rounded-full text-black font-semibold">
-            Order Now
-          </button>
-
-        </div>
-
-      </div>
+      <button class="filter-btn" data-filter="dessert">
+        Desserts
+      </button>
 
     </div>
 
   </div>
-  
+
 </section>
 
-<a
-href="https://wa.me/2348012345678?text=Hello%20MercyLuvSpecial%20Kitchen,%20I%20would%20like%20to%20place%20an%20order."
-target="_blank"
-class="whatsapp-float"
+<section class="py-20 bg-black">
+
+  <div
+  id="menuGrid"
+  class="
+  max-w-7xl
+  mx-auto
+  px-6
+
+  grid
+  grid-cols-1
+  sm:grid-cols-2
+  lg:grid-cols-3
+  xl:grid-cols-4
+
+  gap-6
+  "
+ >
+  
+  <div
+  class="menu-item rice group bg-[#111]
+  border border-white/10
+  rounded-[28px]
+  overflow-hidden
+  transition duration-500
+  hover:border-yellow-400/40"
+  data-name="jollof rice"
+  >
+
+  <div class="relative">
+
+    <img
+      src="./images/rice1.jpg"
+      alt="Jollof Rice"
+      class="
+      w-full
+      h-52
+      object-cover
+      group-hover:scale-110
+      transition duration-700
+      "
+    >
+
+    <div
+      class="absolute top-4 right-4
+      bg-yellow-400
+      text-black
+      px-4 py-2
+      rounded-full
+      font-bold"
+    >
+      ₦8,000
+    </div>
+
+  </div>
+
+  <div class="p-5">
+
+    <h3 class="text-xl font-bold mb-2">
+      Jollof Rice
+    </h3>
+
+    <p class="text-gray-400 text-sm mb-4">
+      Nigerian jollof rice served with chicken.
+    </p>
+
+    <button
+      class="premium-btn w-full py-3 rounded-full"
+    >
+      Order Now
+    </button>
+
+  </div>
+    
+  </div>
+ 
+  <div
+  class="menu-item rice group bg-[#111]
+  border border-white/10
+  rounded-[28px]
+  overflow-hidden
+  transition duration-500
+  hover:border-yellow-400/40"
+  data-name="jollof rice"
 >
 
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="30"
-    height="30"
-    fill="currentColor"
-    viewBox="0 0 16 16"
-  >
-    <path d="M13.601 2.326A7.854 7.854 0 0 0 8.004 0C3.58 0 .005 3.574.005 7.998c0 1.41.369 2.788 1.07 4.002L0 16l4.11-1.075a7.963 7.963 0 0 0 3.894 1.003h.003c4.423 0 7.998-3.575 7.998-7.999a7.95 7.95 0 0 0-2.404-5.603zM8.007 14.5a6.47 6.47 0 0 1-3.301-.908l-.236-.14-2.438.638.651-2.377-.154-.244a6.46 6.46 0 0 1-.99-3.47c0-3.584 2.918-6.501 6.505-6.501a6.45 6.45 0 0 1 4.598 1.906 6.455 6.455 0 0 1 1.901 4.595c-.002 3.586-2.92 6.501-6.536 6.501zm3.565-4.848c-.195-.098-1.155-.57-1.334-.635-.178-.065-.308-.098-.438.098-.13.195-.503.635-.617.765-.113.13-.227.146-.422.049-.195-.098-.824-.304-1.57-.97-.58-.517-.971-1.155-1.084-1.35-.114-.195-.012-.3.085-.397.087-.087.195-.227.292-.34.098-.114.13-.195.195-.325.065-.13.033-.244-.016-.342-.049-.098-.438-1.057-.6-1.447-.158-.379-.319-.328-.438-.334l-.373-.007c-.13 0-.341.049-.519.244-.178.195-.681.666-.681 1.624s.698 1.884.795 2.014c.098.13 1.374 2.099 3.33 2.943.466.201.829.321 1.112.411.467.149.892.128 1.228.078.375-.056 1.155-.472 1.318-.928.163-.455.163-.846.114-.928-.049-.081-.178-.13-.373-.227z"/>
-  </svg>
-</a>
+  <div class="relative">
+
+    <img
+      src="./images/rice1.jpg"
+      alt="Jollof Rice"
+      class="
+      w-full
+      h-52
+      object-cover
+      group-hover:scale-110
+      transition duration-700
+      "
+    >
+
+    <div
+      class="absolute top-4 right-4
+      bg-yellow-400
+      text-black
+      px-4 py-2
+      rounded-full
+      font-bold"
+    >
+      ₦8,000
+    </div>
+
+  </div>
+
+  <div class="p-5">
+
+    <h3 class="text-xl font-bold mb-2">
+      Jollof Rice
+    </h3>
+
+    <p class="text-gray-400 text-sm mb-4">
+      Nigerian jollof rice served with chicken.
+    </p>
+
+    <button
+      class="premium-btn w-full py-3 rounded-full"
+    >
+      Order Now
+    </button>
+
+  </div>
+   
+ </div>
+  <div
+  class="menu-item rice group bg-[#111]
+  border border-white/10
+  rounded-[28px]
+  overflow-hidden
+  transition duration-500
+  hover:border-yellow-400/40"
+  data-name="jollof rice"
+>
+
+  <div class="relative">
+
+    <img
+      src="./images/rice1.jpg"
+      alt="Jollof Rice"
+      class="
+      w-full
+      h-52
+      object-cover
+      group-hover:scale-110
+      transition duration-700
+      "
+    >
+
+    <div
+      class="absolute top-4 right-4
+      bg-yellow-400
+      text-black
+      px-4 py-2
+      rounded-full
+      font-bold"
+    >
+      ₦8,000
+    </div>
+
+  </div>
+
+  <div class="p-5">
+
+    <h3 class="text-xl font-bold mb-2">
+      Jollof Rice
+    </h3>
+
+    <p class="text-gray-400 text-sm mb-4">
+      Nigerian jollof rice served with chicken.
+    </p>
+
+    <button
+      class="premium-btn w-full py-3 rounded-full"
+    >
+      Order Now
+    </button>
+
+  </div>
+   
+</div>
+    <!-- Add More Cards Here -->
+
+  </div>
+
+</section>
 
 
-<script src="script.js"></script>
-
-</body>
