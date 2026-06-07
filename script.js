@@ -21,7 +21,11 @@ const heroImages = [
   "./images/hero2.jpeg",
   "./images/hero3.jpeg",
   "./images/hero4.jpeg",
-  "./images/hero5.jpeg"
+  "./images/hero5.jpg",
+  "./images/hero6.jpg",
+  "./images/hero7.jpg",
+  "./images/hero8.jpg",
+  "./images/hero9.jpg"
 ];
 
 let current = 0;
@@ -78,36 +82,6 @@ darkModeToggle.addEventListener("click", () => {
 
 // SEARCH MENU
 
-const menuSearch =
-document.getElementById("menuSearch");
-
-const menuItems =
-document.querySelectorAll(".menu-item");
-
-menuSearch.addEventListener("input", () => {
-
-  const searchValue =
-  menuSearch.value.toLowerCase();
-
-  menuItems.forEach(item => {
-
-    const foodName =
-    item.dataset.name.toLowerCase();
-
-    if(foodName.includes(searchValue)){
-
-      item.style.display = "block";
-
-    } else {
-
-      item.style.display = "none";
-
-    }
-
-  });
-
-});
-  
 
 const menuSearch = document.getElementById("menuSearch");
 
