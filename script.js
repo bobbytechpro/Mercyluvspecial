@@ -135,3 +135,39 @@ if(menuSearch){
   });
 
 }
+
+
+
+
+const filterBtns = document.querySelectorAll(".filter-btn");
+const menuItems = document.querySelectorAll(".menu-item");
+
+filterBtns.forEach(btn => {
+
+  btn.addEventListener("click", () => {
+
+    // remove active class
+    filterBtns.forEach(b =>
+      b.classList.remove("active-filter")
+    );
+
+    btn.classList.add("active-filter");
+
+    const filter = btn.dataset.filter;
+
+    menuItems.forEach(item => {
+
+      if (
+        filter === "all" ||
+        item.classList.contains(filter)
+      ) {
+        item.style.display = "block";
+      } else {
+        item.style.display = "none";
+      }
+
+    });
+
+  });
+
+});
