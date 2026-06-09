@@ -12,639 +12,399 @@
 
 
 <body class="text-white">
-
-<
-<!-- ========================= -->
-
-<!-- PREMIUM NAVBAR -->
-
-<!-- ========================= -->
-
-<header
+  <header
   class="
   fixed top-0 left-0 w-full z-[9999]
-  bg-black/40 backdrop-blur-2xl
-  border-b border-white/10
-  "
+  bg-black/70 backdrop-blur-xl
+  border-b border-white/10"
+
+  
 >
 
   <div
     class="
-    max-w-7xl mx-auto
-    px-5 md:px-8 lg:px-10
+    max-w-7xl
+    mx-auto
+    px-5
+    md:px-8
+    lg:px-10
     "
   >
 
-
-<div
-  class="
-  h-20 md:h-24
-  flex items-center justify-between
-  "
->
-
-  <!-- LOGO -->
-  <a
-    href="index.html"
-    class="flex items-center"
-  >
-
-    <img
-      src="./images/Mercylogo.png"
-      alt="MercyLuv"
+    <div
       class="
-      h-14 md:h-20
-      w-auto
-      object-contain
+      h-20
+      md:h-24
+      flex
+      items-center
+      justify-between
       "
     >
 
-  </a>
+      <!-- LOGO -->
+      <a
+        href="index.html"
+        class="flex items-center"
+      >
 
-  <!-- DESKTOP NAVIGATION -->
-  <nav
-    class="
-    hidden lg:flex
-    items-center
-    gap-10
-    "
-  >
+        <div>
 
-    <a
-      href="index.html"
-      class="text-gray-300 hover:text-yellow-400 transition"
-    >
-      Home
-    </a>
+          <h1
+            class="
+            text-xl
+            md:text-3xl
+            font-black
+            text-yellow-400
+            leading-none
+            "
+          >
+            Mercyluvspecial
+          </h1>
 
-    <a
-      href="menu.html"
-      class="text-gray-300 hover:text-yellow-400 transition"
-    >
-      Menu
-    </a>
+          <p
+            class="
+            text-[10px]
+            md:text-xs
+            uppercase
+            tracking-[6px]
+            text-white
+            mt-1
+            "
+          >
+            Kitchen
+          </p>
 
-    <a
-      href="specials.html"
-      class="text-yellow-400"
-    >
-      Specials
-    </a>
+        </div>
 
-    <a
-      href="contact.html"
-      class="text-gray-300 hover:text-yellow-400 transition"
-    >
-      Contact
-    </a>
+      </a>
 
-  </nav>
+      <!-- DESKTOP MENU -->
+      <nav
+        class="
+        hidden
+        lg:flex
+        items-center
+        gap-10
+        "
+      >
 
-  <!-- RIGHT SIDE -->
-  <div
-    class="
-    flex items-center gap-3
-    "
-  >
+        <a href="index.html" class="nav-link">
+          Home
+        </a>
 
-    <!-- DARK MODE -->
-    <button
-      id="darkModeToggle"
-      class="
-      w-11 h-11 md:w-12 md:h-12
-      rounded-full
-      bg-white/10
-      border border-white/10
-      backdrop-blur-xl
-      flex items-center justify-center
-      text-lg
-      "
-    >
-      🌙
-    </button>
+        <a href="menu.html" class="nav-link">
+          Menu
+        </a>
 
-    <!-- BOOK TABLE -->
-    <a
-      href="#"
-      class="
-      hidden md:flex
-      items-center justify-center
-      px-6 py-3
-      rounded-full
-      bg-yellow-400
-      text-black
-      font-semibold
-      hover:scale-105
-      transition
-      "
-    >
-      Book Table
-    </a>
+        <a href="specials.html" class="nav-link">
+          Specials
+        </a>
 
-    <!-- MOBILE MENU BUTTON -->
-    <button
-      id="menuBtn"
-      class="
-      lg:hidden
-      flex flex-col gap-1
-      "
-    >
+        <a href="contact.html" class="nav-link">
+          Contact
+        </a>
 
-      <span class="w-7 h-[3px] bg-white rounded-full"></span>
-      <span class="w-7 h-[3px] bg-white rounded-full"></span>
-      <span class="w-7 h-[3px] bg-white rounded-full"></span>
+      </nav>
 
-    </button>
+      <!-- RIGHT SIDE -->
+      <div
+        class="
+        flex
+        items-center
+        gap-3
+        "
+      >
 
-  </div>
+        <!-- DARK MODE -->
+        <button
+          id="darkModeToggle"
+          class="
+          w-11
+          h-11
+          md:w-12
+          md:h-12
+          rounded-full
+          bg-white/10
+          border
+          border-white/10
+          flex
+          items-center
+          justify-center
+          text-lg
+          "
+        >
+          🌙
+        </button>
 
-</div>
-```
+        <!-- BOOK TABLE -->
+        <a
+          href="#"
+          class="
+          hidden
+          md:flex
+          items-center
+          justify-center
+          px-6
+          py-3
+          rounded-full
+          bg-yellow-400
+          text-black
+          font-semibold
+          hover:scale-105
+          transition
+          "
+        >
+          Book Table
+        </a>
+
+        <!-- HAMBURGER -->
+        <button
+          id="menuBtn"
+          class="
+          lg:hidden
+          flex
+          flex-col
+          gap-1
+          "
+        >
+
+          <span class="w-7 h-[3px] bg-white rounded-full"></span>
+          <span class="w-7 h-[3px] bg-white rounded-full"></span>
+          <span class="w-7 h-[3px] bg-white rounded-full"></span>
+
+        </button>
+
+      </div>
+
+    </div>
 
   </div>
 
 </header>
 
 <!-- ========================= -->
-
 <!-- MOBILE MENU -->
-
 <!-- ========================= -->
 
 <div
-  id="mobileMenu"
-  class="
-  fixed
-  top-0
-  right-0
-  h-screen
-  w-[85%]
-  max-w-[340px]
-  bg-[#080808]
-  backdrop-blur-2xl
-  border-l border-white/10
-  z-[10000]
-  translate-x-full
-  transition-all
-  duration-500
-  "
->
-
-  <div
+    id="mobileMenu"
     class="
-    h-full
-    flex flex-col
+    fixed
+    top-0
+    right-0
+    h-screen
+    w-[85%]
+    max-w-[340px]
+    bg-[#050505]
+    border-l
+    border-white/10
+    translate-x-full
+    transition-all
+    duration-500
+    z-[10000]
     "
   >
 
-
-<!-- TOP -->
-<div
-  class="
-  flex items-center justify-between
-  p-6
-  border-b border-white/10
-  "
->
-
-  <img
-    src="./images/Mercylogo.png"
-    class="h-12 w-auto"
-  >
-
-  <button
-    id="closeMenu"
-    class="text-4xl text-white"
-  >
-    ×
-  </button>
-
-</div>
-
-<!-- LINKS -->
-<div
-  class="
-  flex flex-col
-  px-8 py-10
-  gap-8
-  text-lg
-  "
->
-
-  <a href="index.html">Home</a>
-  <a href="menu.html">Menu</a>
-  <a href="specials.html">Specials</a>
-  <a href="contact.html">Contact</a>
-
-  <a
-    href="#"
+  <div
     class="
-    mt-4
-    bg-yellow-400
-    text-black
-    text-center
-    py-4
-    rounded-full
-    font-semibold
+    p-6
+    flex
+    items-center
+    justify-between
+    border-b
+    border-white/10
     "
   >
-    Book Table
-  </a>
 
-</div>
+    <div>
 
+      <h1
+        class="
+        text-xl
+        font-black
+        text-yellow-400
+        "
+      >
+        Mercyluvspecial
+      </h1>
+
+      <p
+        class="
+        text-[10px]
+        uppercase
+        tracking-[5px]
+        "
+      >
+        Kitchen
+      </p>
+
+    </div>
+
+    <button
+      id="closeMenu"
+      class="
+      text-4xl
+      text-white
+      "
+    >
+      ×
+    </button>
 
   </div>
+
+  <nav
+    class="
+    flex
+    flex-col
+    p-8
+    gap-8
+    text-lg
+    "
+  >
+
+    <a href="index.html">Home</a>
+
+    <a href="menu.html">Menu</a>
+
+    <a href="specials.html">Specials</a>
+
+    <a href="contact.html">Contact</a>
+
+    <a
+      href="#"
+      class="
+      mt-4
+      bg-yellow-400
+      text-black
+      text-center
+      py-4
+      rounded-full
+      font-semibold
+      "
+    >
+      Book Table
+    </a>
+
+  </nav>
 
 </div>
 
 <!-- ========================= -->
-<!-- CHEF SIGNATURE HERO -->
-<!-- ========================= -->
 <section
-  class="relative min-h-[85vh] md:min-h-screen flex items-center justify-center overflow-hidden pt-24 md:pt-32"
->
- <!-- Background -->
-
-<img
- src="./images/menuanotherbg.jpg"
- alt="Chef Special"
- class="absolute inset-0 w-full h-full object-cover"
-/>
-
-  <!-- Overlay -->
-
-  <div class="absolute inset-0 bg-black/70"></div>
-
-  <!-- Luxury Glow -->
-
-  <div
-    class="absolute inset-0 bg-gradient-to-r from-yellow-500/10 via-transparent to-yellow-500/10"
-  ></div>
-
-  <!-- Content -->
-
-  <div
-    class="relative z-10 max-w-6xl mx-auto px-5 md:px-8 text-center"
-  >
-
-
-<p
-  class="text-yellow-400 uppercase tracking-[6px] md:tracking-[10px] text-xs md:text-sm mb-5"
->
-  Chef's Exclusive Collection
-</p>
-
-<h1
-  class="text-4xl sm:text-5xl md:text-7xl font-black leading-tight"
->
-  Signature
-  <span class="text-yellow-400">
-    Specials
-  </span>
-</h1>
-
-<p
-  class="mt-6 text-base md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed"
->
-  Experience handcrafted dishes prepared with premium ingredients,
-  exceptional flavors and luxury presentation designed for unforgettable dining moments.
-</p>
-
-<div
-  class="flex flex-col sm:flex-row justify-center items-center gap-4 mt-10"
+  class="relative min-h-screen overflow-hidden bg-black pt-32"
 >
 
-  <a
-    href="#featured"
-    class="premium-btn px-8 py-4 rounded-full text-black font-semibold w-full sm:w-auto text-center"
-  >
-    Explore Specials
-  </a>
+  <!-- Background -->
+  <div class="absolute inset-0">
 
-  <a
-    href="#offer"
-    class="border border-white/20 px-8 py-4 rounded-full text-white hover:bg-white hover:text-black transition w-full sm:w-auto text-center"
-  >
-    Today's Offer
-  </a>
-
-</div>
-
-
-  </div>
-
-</section>
-<section
-  id="featured"
-  class="relative py-20 md:py-28 bg-[#0b0b0b]"
->
-
-  <div class="max-w-7xl mx-auto px-5 md:px-8">
-<!-- Section Heading -->
-<div class="text-center mb-16">
-
-  <p
-    class="text-yellow-400 uppercase tracking-[6px] text-sm mb-4"
-  >
-    Featured Dishes
-  </p>
-
-  <h2
-    class="text-4xl md:text-6xl font-black text-white mb-6"
-  >
-    Chef Recommendations
-  </h2>
-
-  <p
-    class="text-gray-400 max-w-3xl mx-auto"
-  >
-    Discover our chef's handpicked signature dishes,
-    prepared with premium ingredients and unforgettable flavors.
-  </p>
-
-</div>
-
-<!-- Cards Grid -->
-<div
-  class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8"
->
-
-  <!-- Card 1 -->
-  <div
-    class="glass-card rounded-[30px] overflow-hidden group hover:-translate-y-2 transition duration-500"
-  >
-
-    <div class="relative overflow-hidden">
-
-      <img
-        src="./images/hero5.jpeg"
-        alt="Royal Steak"
-        class="w-full h-64 md:h-80 object-cover group-hover:scale-110 transition duration-700"
-      >
-
-      <div
-        class="absolute top-4 right-4 bg-yellow-400 text-black font-bold px-4 py-2 rounded-full"
-      >
-        Chef Pick
-      </div>
-
-    </div>
-
-    <div class="p-7">
-
-      <h3
-        class="text-2xl md:text-3xl font-bold text-white mb-3"
-      >
-        Royal Grilled Steak
-      </h3>
-
-      <p
-        class="text-gray-300 mb-6 leading-relaxed"
-      >
-        Premium grilled steak seasoned with signature herbs and served with gourmet sides.
-      </p>
-
-      <div
-        class="flex items-center justify-between"
-      >
-
-        <span
-          class="text-yellow-400 text-3xl font-black"
-        >
-          $45
-        </span>
-
-        <button
-          class="premium-btn px-6 py-3 rounded-full"
-        >
-          Order Now
-        </button>
-
-      </div>
-
-    </div>
-
-  </div>
-
-  <!-- Card 2 -->
-  <div
-    class="glass-card rounded-[30px] overflow-hidden group hover:-translate-y-2 transition duration-500"
-  >
-
-    <div class="relative overflow-hidden">
-
-      <img
-        src="./images/hero6.jpeg"
-        alt="Seafood Deluxe"
-        class="w-full h-64 md:h-80 object-cover group-hover:scale-110 transition duration-700"
-      >
-
-      <div
-        class="absolute top-4 right-4 bg-yellow-400 text-black font-bold px-4 py-2 rounded-full"
-      >
-        Popular
-      </div>
-
-    </div>
-
-    <div class="p-7">
-
-      <h3
-        class="text-2xl md:text-3xl font-bold text-white mb-3"
-      >
-        Seafood Deluxe
-      </h3>
-
-      <p
-        class="text-gray-300 mb-6 leading-relaxed"
-      >
-        Fresh seafood platter prepared daily with premium ingredients and chef-crafted sauces.
-      </p>
-
-      <div
-        class="flex items-center justify-between"
-      >
-
-        <span
-          class="text-yellow-400 text-3xl font-black"
-        >
-          $52
-        </span>
-
-        <button
-          class="premium-btn px-6 py-3 rounded-full"
-        >
-          Order Now
-        </button>
-
-      </div>
-
-    </div>
-
-  </div>
-
-  <!-- Card 3 -->
-  <div
-    class="glass-card rounded-[30px] overflow-hidden group hover:-translate-y-2 transition duration-500"
-  >
-
-    <div class="relative overflow-hidden">
-
-      <img
-        src="./images/hero3.jpeg"
-        alt="Luxury Dessert"
-        class="w-full h-64 md:h-80 object-cover group-hover:scale-110 transition duration-700"
-      >
-
-      <div
-        class="absolute top-4 right-4 bg-yellow-400 text-black font-bold px-4 py-2 rounded-full"
-      >
-        Sweet Choice
-      </div>
-
-    </div>
-
-    <div class="p-7">
-
-      <h3
-        class="text-2xl md:text-3xl font-bold text-white mb-3"
-      >
-        Luxury Dessert
-      </h3>
-
-      <p
-        class="text-gray-300 mb-6 leading-relaxed"
-      >
-        Rich handcrafted dessert created from premium ingredients and luxury presentation.
-      </p>
-
-      <div
-        class="flex items-center justify-between"
-      >
-
-        <span
-          class="text-yellow-400 text-3xl font-black"
-        >
-          $28
-        </span>
-
-        <button
-          class="premium-btn px-6 py-3 rounded-full"
-        >
-          Order Now
-        </button>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</div>
-
-
-  </div>
-
-</section>
-
-<!-- TODAY'S SPECIAL OFFER -->
-<section
-  id="offer"
-  class="relative py-24 px-5 lg:px-12 overflow-hidden"
->
-
-  <!-- Background Image -->
-  <img
-    src="./images/chefspecial.jpg"
-    alt="Today's Special"
-    class="absolute inset-0 w-full h-full object-cover"
-  />
-
-  <!-- Overlay -->
-  <div class="absolute inset-0 bg-black/75"></div>
-
-  <!-- Content -->
-  <div class="relative z-10 max-w-6xl mx-auto">
-
-    <div
-      class="rounded-[40px] overflow-hidden border border-white/10 backdrop-blur-xl bg-white/5 p-8 md:p-16"
+    <!-- Background Image -->
+    <img
+      src="./images/hero3.jpeg"
+      alt=""
+      class="w-full h-full object-cover opacity-20"
     >
 
-      <div class="text-center">
+    <!-- Dark Overlay -->
+    <div
+      class="absolute inset-0 bg-gradient-to-r from-black via-black/90 to-black/70"
+    ></div>
 
-        <span
-          class="inline-block bg-yellow-400 text-black font-bold px-5 py-2 rounded-full mb-6"
-        >
-          LIMITED OFFER
-        </span>
+    <!-- Gold Glow -->
+    <div
+      class="absolute top-20 left-20 w-72 h-72 bg-yellow-500/10 blur-[120px] rounded-full"
+    ></div>
 
-        <h2
-          class="text-4xl md:text-6xl font-black text-white mb-6"
-        >
-          Today's Special Deal
-        </h2>
+    <div
+      class="absolute bottom-0 right-0 w-96 h-96 bg-yellow-400/10 blur-[150px] rounded-full"
+    ></div>
+
+  </div>
+
+  <!-- Content -->
+  <div
+    class="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 min-h-screen flex items-center"
+  >
+
+    <div
+      class="grid lg:grid-cols-2 gap-16 items-center"
+    >
+
+      <!-- Left -->
+      <div>
 
         <p
-          class="text-gray-300 text-lg max-w-3xl mx-auto mb-10"
+          class="text-yellow-400 uppercase tracking-[8px] mb-6"
         >
-          Order any premium chef special today and receive a complimentary
-          luxury drink plus exclusive dessert.
+          Mercyluvspecial Signature Collection
         </p>
 
-        <!-- COUNTDOWN -->
-        <div
-          class="grid grid-cols-2 md:grid-cols-4 gap-5 max-w-4xl mx-auto mb-12"
+        <h1
+          class="text-5xl md:text-6xl xl:text-7xl font-black leading-tight mb-8"
         >
+          Chef's
 
-          <div class="glass-card rounded-3xl p-6">
-            <h3 id="days" class="text-4xl font-black text-yellow-400">
-              00
-            </h3>
-            <p class="text-gray-300 mt-2">Days</p>
-          </div>
+          <span class="text-yellow-400 block">
+            Signature Specials
+          </span>
 
-          <div class="glass-card rounded-3xl p-6">
-            <h3 id="hours" class="text-4xl font-black text-yellow-400">
-              00
-            </h3>
-            <p class="text-gray-300 mt-2">Hours</p>
-          </div>
+        </h1>
 
-          <div class="glass-card rounded-3xl p-6">
-            <h3 id="minutes" class="text-4xl font-black text-yellow-400">
-              00
-            </h3>
-            <p class="text-gray-300 mt-2">Minutes</p>
-          </div>
+        <p
+          class="text-gray-300 text-lg md:text-xl leading-relaxed max-w-xl mb-10"
+        >
+          Discover our most celebrated dishes,
+          crafted with authentic African recipes,
+          premium ingredients and unforgettable flavor.
+        </p>
 
-          <div class="glass-card rounded-3xl p-6">
-            <h3 id="seconds" class="text-4xl font-black text-yellow-400">
-              00
-            </h3>
-            <p class="text-gray-300 mt-2">Seconds</p>
-          </div>
-
-        </div>
-
-        <!-- BUTTONS -->
         <div
-          class="flex flex-wrap justify-center gap-5"
+          class="flex flex-wrap gap-4"
         >
 
           <a
-            href="#"
+            href="menu.html"
             class="premium-btn px-8 py-4 rounded-full"
           >
             Order Now
           </a>
 
           <a
-            href="#"
-            class="border border-white/20 text-white px-8 py-4 rounded-full hover:bg-white hover:text-black transition"
+            href="#specialsGrid"
+            class="border border-white/20 px-8 py-4 rounded-full hover:bg-white hover:text-black transition"
           >
-            Book Table
+            Explore Specials
           </a>
+
+        </div>
+
+      </div>
+
+      <!-- Right -->
+      <div
+        class="relative flex justify-center"
+      >
+
+        <!-- Glow -->
+        <div
+          class="absolute w-[500px] h-[500px] bg-yellow-500/10 blur-[150px] rounded-full"
+        ></div>
+
+        <div
+          class="relative overflow-hidden rounded-[40px] border border-white/10"
+        >
+
+          <img
+            src="./images/rice1.jpg"
+            alt="Chef Special"
+            class="w-full max-w-[550px] h-[650px] object-cover hover:scale-105 transition duration-700"
+          >
+
+          <!-- Floating Badge -->
+          <div
+            class="absolute top-6 left-6 bg-yellow-400 text-black px-5 py-3 rounded-full font-bold"
+          >
+            👑 Chef's Pick
+          </div>
 
         </div>
 
@@ -655,22 +415,494 @@
   </div>
 
 </section>
+
+<section class="py-24 bg-[#080808]">
+
+  <div class="max-w-7xl mx-auto px-6 lg:px-12">
+
+    <div class="text-center mb-16">
+
+      <p class="text-yellow-400 uppercase tracking-[6px] mb-4">
+        Featured Dishes
+      </p>
+
+      <h2 class="text-5xl font-bold">
+        Today's Signature Selection
+      </h2>
+
+    </div>
+
+    <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
+
+      <!-- Special Card -->
+       <div
+class="group bg-[#111]
+rounded-[32px]
+overflow-hidden
+border border-white/10
+hover:border-yellow-400/30
+transition duration-500">
+
+  <div class="overflow-hidden">
+
+    <img
+      src="./images/rice1.jpg"
+      class="
+      w-full
+      h-72
+      object-cover
+      group-hover:scale-110
+      transition duration-700"
+    >
+
+  </div>
+
+  <div class="p-6">
+
+    <div class="flex justify-between items-center mb-4">
+
+      <h3 class="text-2xl font-bold">
+        Luxury Jollof Rice
+      </h3>
+
+      <span
+      class="
+      bg-yellow-400
+      text-black
+      px-4 py-2
+      rounded-full
+      font-bold">
+      ₦8,000
+      </span>
+
+    </div>
+
+    <p class="text-gray-400 mb-6">
+      Rich Nigerian jollof prepared with premium ingredients and grilled chicken.
+    </p>
+
+    <button
+    class="
+    w-full
+    py-4
+    rounded-full
+    bg-yellow-400
+    text-black
+    font-bold
+    hover:scale-105
+    transition">
+      Order Now
+    </button>
+
+  </div>
+
+</div>
+
+  </div>
+
+  </div>
+
+</section>
+<section class="py-24 bg-[#080808]">
+
+  <div class="max-w-7xl mx-auto px-6 lg:px-12">
+
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+
+      <!-- Image -->
+      <div class="overflow-hidden rounded-[32px]">
+        <img
+          src="./images/hero7.jpg"
+          alt="Chef Recommendation"
+          class="w-full h-[500px] object-cover hover:scale-105 transition duration-700"
+        >
+      </div>
+
+      <!-- Content -->
+      <div>
+
+        <span class="bg-yellow-400 text-black px-5 py-2 rounded-full font-semibold">
+          👨‍🍳 Chef Recommendation
+        </span>
+
+        <h2 class="text-5xl font-bold mt-6 mb-6">
+          Seafood Signature Rice
+        </h2>
+
+        <p class="text-gray-400 text-lg leading-relaxed mb-8">
+          Prepared with premium prawns, fresh vegetables,
+          aromatic spices and our exclusive chef recipe.
+          One of the most ordered dishes at Mercyluvspecial Kitchen.
+        </p>
+
+        <div class="flex items-center gap-4 mb-8">
+          <span class="text-yellow-400 text-2xl">
+            ⭐⭐⭐⭐⭐
+          </span>
+
+          <span class="text-gray-300">
+            4.9 Customer Rating
+          </span>
+        </div>
+
+        <button class="premium-btn px-8 py-4 rounded-full">
+          Order This Special
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="py-24 bg-black">
+
+  <div class="max-w-7xl mx-auto px-6 lg:px-12">
+
+    <div class="text-center mb-16">
+
+      <p class="text-yellow-400 uppercase tracking-[6px]">
+        Testimonials
+      </p>
+
+      <h2 class="text-5xl font-bold mt-4">
+        What Our Customers Say
+      </h2>
+
+    </div>
+
+    <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
+
+      <!-- Review 1 -->
+      <div class="bg-[#111] border border-white/10 rounded-[32px] p-8">
+
+        <div class="text-yellow-400 mb-4">
+          ⭐⭐⭐⭐⭐
+        </div>
+
+        <p class="text-gray-300 mb-6">
+          Best Jollof Rice I've tasted in Lagos.
+          Amazing atmosphere and excellent service.
+        </p>
+
+        <h4 class="font-bold">
+          Chinedu A.
+        </h4>
+
+      </div>
+
+      <!-- Review 2 -->
+      <div class="bg-[#111] border border-white/10 rounded-[32px] p-8">
+
+        <div class="text-yellow-400 mb-4">
+          ⭐⭐⭐⭐⭐
+        </div>
+
+        <p class="text-gray-300 mb-6">
+          Their seafood specials are absolutely incredible.
+          Highly recommended.
+        </p>
+
+        <h4 class="font-bold">
+          Sarah O.
+        </h4>
+
+      </div>
+
+      <!-- Review 3 -->
+      <div class="bg-[#111] border border-white/10 rounded-[32px] p-8">
+
+        <div class="text-yellow-400 mb-4">
+          ⭐⭐⭐⭐⭐
+        </div>
+
+        <p class="text-gray-300 mb-6">
+          Premium dining experience with authentic African flavors.
+        </p>
+
+        <h4 class="font-bold">
+          Daniel K.
+        </h4>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<section class="py-24 px-6 bg-[#080808]">
+
+  <div
+    class="
+    max-w-6xl
+    mx-auto
+    rounded-[40px]
+    overflow-hidden
+    bg-gradient-to-r
+    from-yellow-400
+    to-yellow-500
+    p-12 lg:p-20
+    text-center
+    text-black
+    "
+  >
+
+    <h2 class="text-4xl lg:text-6xl font-black mb-6">
+      Reserve Your Table Today
+    </h2>
+
+    <p class="text-lg lg:text-xl max-w-3xl mx-auto mb-10">
+      Experience unforgettable flavors, premium service,
+      and authentic African cuisine crafted with passion.
+    </p>
+
+    <div class="flex flex-wrap justify-center gap-5">
+
+      <a
+        href="contact.html"
+        class="
+        bg-black
+        text-white
+        px-10
+        py-4
+        rounded-full
+        font-bold
+        hover:scale-105
+        transition
+        "
+      >
+        Book Reservation
+      </a>
+
+      <a
+        href="https://wa.me/2348012345678"
+        target="_blank"
+        class="
+        bg-white
+        text-black
+        px-10
+        py-4
+        rounded-full
+        font-bold
+        hover:scale-105
+        transition
+        "
+      >
+        WhatsApp Order
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+<footer class="relative bg-[#050505] border-t border-white/10 overflow-hidden">
+
+  <!-- Glow Effects -->
+  <div class="absolute top-0 left-0 w-96 h-96 bg-yellow-500/10 blur-[150px] rounded-full"></div>
+  <div class="absolute bottom-0 right-0 w-96 h-96 bg-yellow-500/10 blur-[150px] rounded-full"></div>
+
+  <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 py-20">
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+
+      <!-- Brand -->
+      <div>
+
+        <h3 class="text-3xl font-black">
+          Mercyluvspecial
+          <span class="block text-yellow-400 text-xl mt-1">
+            Kitchen
+          </span>
+        </h3>
+
+        <p class="text-gray-400 mt-6 leading-relaxed">
+          Bringing authentic African flavors, premium dining,
+          and unforgettable culinary experiences to every customer.
+        </p>
+
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+
+        <h4 class="text-xl font-bold mb-6">
+          Quick Links
+        </h4>
+
+        <ul class="space-y-4 text-gray-400">
+
+          <li>
+            <a href="index.html" class="hover:text-yellow-400 transition">
+              Home
+            </a>
+          </li>
+
+          <li>
+            <a href="menu.html" class="hover:text-yellow-400 transition">
+              Menu
+            </a>
+          </li>
+
+          <li>
+            <a href="specials.html" class="hover:text-yellow-400 transition">
+              Specials
+            </a>
+          </li>
+
+          <li>
+            <a href="contact.html" class="hover:text-yellow-400 transition">
+              Contact
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <!-- Opening Hours -->
+      <div>
+
+        <h4 class="text-xl font-bold mb-6">
+          Opening Hours
+        </h4>
+
+        <ul class="space-y-4 text-gray-400">
+
+          <li>
+            Monday - Friday
+            <span class="block text-white">
+              8:00 AM - 10:00 PM
+            </span>
+          </li>
+
+          <li>
+            Saturday
+            <span class="block text-white">
+              9:00 AM - 11:00 PM
+            </span>
+          </li>
+
+          <li>
+            Sunday
+            <span class="block text-white">
+              10:00 AM - 9:00 PM
+            </span>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <!-- Contact -->
+      <div>
+
+        <h4 class="text-xl font-bold mb-6">
+          Contact
+        </h4>
+
+        <ul class="space-y-4 text-gray-400">
+
+          <li>
+            📍 Lagos, Nigeria
+          </li>
+
+          <li>
+            📞 +234 XXX XXX XXXX
+          </li>
+
+          <li>
+            ✉ info@mercyluvspecial.com
+          </li>
+
+        </ul>
+
+        <a
+          href="https://wa.me/234XXXXXXXXXX"
+          target="_blank"
+          class="inline-flex mt-6 bg-green-500 hover:bg-green-600 px-6 py-3 rounded-full font-semibold transition"
+        >
+          WhatsApp Us
+        </a>
+
+      </div>
+
+    </div>
+
+    <!-- Divider -->
+    <div class="border-t border-white/10 my-10"></div>
+
+    <!-- Bottom -->
+    <div
+      class="flex flex-col md:flex-row justify-between items-center gap-5"
+    >
+
+      <p class="text-gray-500 text-center md:text-left">
+        © 2026 Mercyluvspecial Kitchen. All Rights Reserved.
+      </p>
+
+      <div class="flex gap-5 text-2xl">
+
+        <a href="#" class="hover:text-yellow-400 transition">
+          📘
+        </a>
+
+        <a href="#" class="hover:text-yellow-400 transition">
+          📸
+        </a>
+
+        <a href="#" class="hover:text-yellow-400 transition">
+          🎵
+        </a>
+
+        <a href="#" class="hover:text-yellow-400 transition">
+          ▶️
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
+
+<!-- FLOATING WHATSAPP BUTTON -->
 <a
-href="https://wa.me/2348012345678?text=Hello%20MercyLuvSpecial%20Kitchen,%20I%20would%20like%20to%20place%20an%20order."
-target="_blank"
-class="whatsapp-float"
+  href="https://wa.me/2348012345678"
+  target="_blank"
+  class="fixed bottom-6 right-6 z-[9999] group"
 >
 
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="30"
-    height="30"
-    fill="currentColor"
-    viewBox="0 0 16 16"
+  <div
+    class="w-16 h-16 rounded-full bg-green-500 flex items-center justify-center shadow-2xl hover:scale-110 transition-all duration-300"
   >
-    <path d="M13.601 2.326A7.854 7.854 0 0 0 8.004 0C3.58 0 .005 3.574.005 7.998c0 1.41.369 2.788 1.07 4.002L0 16l4.11-1.075a7.963 7.963 0 0 0 3.894 1.003h.003c4.423 0 7.998-3.575 7.998-7.999a7.95 7.95 0 0 0-2.404-5.603zM8.007 14.5a6.47 6.47 0 0 1-3.301-.908l-.236-.14-2.438.638.651-2.377-.154-.244a6.46 6.46 0 0 1-.99-3.47c0-3.584 2.918-6.501 6.505-6.501a6.45 6.45 0 0 1 4.598 1.906 6.455 6.455 0 0 1 1.901 4.595c-.002 3.586-2.92 6.501-6.536 6.501zm3.565-4.848c-.195-.098-1.155-.57-1.334-.635-.178-.065-.308-.098-.438.098-.13.195-.503.635-.617.765-.113.13-.227.146-.422.049-.195-.098-.824-.304-1.57-.97-.58-.517-.971-1.155-1.084-1.35-.114-.195-.012-.3.085-.397.087-.087.195-.227.292-.34.098-.114.13-.195.195-.325.065-.13.033-.244-.016-.342-.049-.098-.438-1.057-.6-1.447-.158-.379-.319-.328-.438-.334l-.373-.007c-.13 0-.341.049-.519.244-.178.195-.681.666-.681 1.624s.698 1.884.795 2.014c.098.13 1.374 2.099 3.33 2.943.466.201.829.321 1.112.411.467.149.892.128 1.228.078.375-.056 1.155-.472 1.318-.928.163-.455.163-.846.114-.928-.049-.081-.178-.13-.373-.227z"/>
-  </svg>
+
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="32"
+      height="32"
+      fill="white"
+      viewBox="0 0 24 24"
+    >
+      <path d="M20.52 3.48A11.83 11.83 0 0 0 12.03 0C5.41 0 .03 5.38.03 12c0 2.11.55 4.17 1.6 5.99L0 24l6.19-1.62A11.92 11.92 0 0 0 12.03 24C18.65 24 24.03 18.62 24.03 12c0-3.2-1.25-6.21-3.51-8.52zM12.03 21.82c-1.8 0-3.56-.48-5.1-1.39l-.37-.22-3.68.96.98-3.59-.24-.37a9.76 9.76 0 0 1-1.5-5.21c0-5.42 4.41-9.83 9.83-9.83 2.62 0 5.08 1.02 6.93 2.88a9.75 9.75 0 0 1 2.87 6.95c0 5.42-4.41 9.82-9.82 9.82zm5.39-7.37c-.29-.15-1.72-.85-1.99-.94-.27-.1-.46-.15-.66.15-.19.29-.76.94-.93 1.13-.17.2-.34.22-.63.07-.29-.15-1.24-.46-2.36-1.47-.87-.78-1.46-1.75-1.63-2.04-.17-.29-.02-.45.13-.6.13-.13.29-.34.44-.51.15-.17.2-.29.29-.49.1-.2.05-.37-.02-.52-.08-.15-.66-1.59-.9-2.18-.24-.57-.48-.49-.66-.5h-.56c-.2 0-.52.08-.79.37-.27.29-1.04 1.01-1.04 2.46s1.06 2.86 1.21 3.06c.15.2 2.08 3.17 5.04 4.45.7.3 1.25.48 1.67.61.7.22 1.34.19 1.85.12.56-.08 1.72-.7 1.96-1.38.24-.68.24-1.26.17-1.38-.07-.12-.26-.19-.55-.34z"/>
+    </svg>
+
+  </div>
+
+  <!-- Pulse Animation -->
+  <span
+    class="absolute inset-0 rounded-full bg-green-500 animate-ping opacity-30"
+  ></span>
+
 </a>
+
+
+
   <script src="script.js"></script>
 </body>
 </html>

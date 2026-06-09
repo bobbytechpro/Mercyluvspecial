@@ -1,0 +1,765 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MercyLuvSpecialKitchen | Premium Food Menu</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="body" class="text-white">
+
+  <!-- ========================= -->
+<!-- PREMIUM NAVBAR -->
+<!-- ========================= -->
+
+<header
+  class="
+  fixed top-0 left-0 w-full z-[9999]
+  bg-black/70 backdrop-blur-xl
+  border-b border-white/10"
+
+  
+>
+
+  <div
+    class="
+    max-w-7xl
+    mx-auto
+    px-5
+    md:px-8
+    lg:px-10
+    "
+  >
+
+    <div
+      class="
+      h-20
+      md:h-24
+      flex
+      items-center
+      justify-between
+      "
+    >
+
+      <!-- LOGO -->
+      <a
+        href="index.html"
+        class="flex items-center"
+      >
+
+        <div>
+
+          <h1
+            class="
+            text-xl
+            md:text-3xl
+            font-black
+            text-yellow-400
+            leading-none
+            "
+          >
+            Mercyluvspecial
+          </h1>
+
+          <p
+            class="
+            text-[10px]
+            md:text-xs
+            uppercase
+            tracking-[6px]
+            text-white
+            mt-1
+            "
+          >
+            Kitchen
+          </p>
+
+        </div>
+
+      </a>
+
+      <!-- DESKTOP MENU -->
+      <nav
+        class="
+        hidden
+        lg:flex
+        items-center
+        gap-10
+        "
+      >
+
+        <a href="index.html" class="nav-link">
+          Home
+        </a>
+
+        <a href="menu.html" class="nav-link">
+          Menu
+        </a>
+
+        <a href="specials.html" class="nav-link">
+          Specials
+        </a>
+
+        <a href="contact.html" class="nav-link">
+          Contact
+        </a>
+
+      </nav>
+
+      <!-- RIGHT SIDE -->
+      <div
+        class="
+        flex
+        items-center
+        gap-3
+        "
+      >
+
+        <!-- DARK MODE -->
+        <button
+          id="darkModeToggle"
+          class="
+          w-11
+          h-11
+          md:w-12
+          md:h-12
+          rounded-full
+          bg-white/10
+          border
+          border-white/10
+          flex
+          items-center
+          justify-center
+          text-lg
+          "
+        >
+          🌙
+        </button>
+
+        <!-- BOOK TABLE -->
+        <a
+          href="#"
+          class="
+          hidden
+          md:flex
+          items-center
+          justify-center
+          px-6
+          py-3
+          rounded-full
+          bg-yellow-400
+          text-black
+          font-semibold
+          hover:scale-105
+          transition
+          "
+        >
+          Book Table
+        </a>
+
+        <!-- HAMBURGER -->
+        <button
+          id="menuBtn"
+          class="
+          lg:hidden
+          flex
+          flex-col
+          gap-1
+          "
+        >
+
+          <span class="w-7 h-[3px] bg-white rounded-full"></span>
+          <span class="w-7 h-[3px] bg-white rounded-full"></span>
+          <span class="w-7 h-[3px] bg-white rounded-full"></span>
+
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</header>
+
+<!-- ========================= -->
+<!-- MOBILE MENU -->
+<!-- ========================= -->
+
+<div
+    id="mobileMenu"
+    class="
+    fixed
+    top-0
+    right-0
+    h-screen
+    w-[85%]
+    max-w-[340px]
+    bg-[#050505]
+    border-l
+    border-white/10
+    translate-x-full
+    transition-all
+    duration-500
+    z-[10000]
+    "
+  >
+
+  <div
+    class="
+    p-6
+    flex
+    items-center
+    justify-between
+    border-b
+    border-white/10
+    "
+  >
+
+    <div>
+
+      <h1
+        class="
+        text-xl
+        font-black
+        text-yellow-400
+        "
+      >
+        Mercyluvspecial
+      </h1>
+
+      <p
+        class="
+        text-[10px]
+        uppercase
+        tracking-[5px]
+        "
+      >
+        Kitchen
+      </p>
+
+    </div>
+
+    <button
+      id="closeMenu"
+      class="
+      text-4xl
+      text-white
+      "
+    >
+      ×
+    </button>
+
+  </div>
+
+  <nav
+    class="
+    flex
+    flex-col
+    p-8
+    gap-8
+    text-lg
+    "
+  >
+
+    <a href="index.html">Home</a>
+
+    <a href="menu.html">Menu</a>
+
+    <a href="specials.html">Specials</a>
+
+    <a href="contact.html">Contact</a>
+
+    <a
+      href="#"
+      class="
+      mt-4
+      bg-yellow-400
+      text-black
+      text-center
+      py-4
+      rounded-full
+      font-semibold
+      "
+    >
+      Book Table
+    </a>
+
+  </nav>
+
+</div>
+
+<section class="relative py-32 bg-[#080808]">
+
+  <div class="max-w-7xl mx-auto px-6 lg:px-12 text-center">
+
+    <p class="text-yellow-400 uppercase tracking-[8px] mb-6">
+      Contact Mercyluvspecial Kitchen
+    </p>
+
+    <h1 class="text-6xl lg:text-8xl font-black mb-8">
+      Reserve,
+      <br>
+      Order &
+      Connect
+    </h1>
+
+    <p class="text-gray-400 text-xl max-w-3xl mx-auto mb-10">
+      Whether you're booking a table, placing an order,
+      or planning a special event, we're ready to serve you.
+    </p>
+
+    <div class="flex flex-wrap justify-center gap-5">
+
+      <a href="#reservationForm" class="premium-btn px-10 py-4 rounded-full">
+        Book Table
+      </a>
+
+      <a href="https://wa.me/2348012345678"
+         target="_blank"
+         class="border border-yellow-400 px-10 py-4 rounded-full">
+        WhatsApp Us
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="py-20 bg-black">
+
+  <div class="max-w-7xl mx-auto px-6 lg:px-12">
+
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <!-- Location -->
+      <div class="bg-[#111] rounded-[30px] p-8 border border-white/10">
+        <div class="text-5xl mb-5">📍</div>
+        <h3 class="text-2xl font-bold mb-3">Visit Us</h3>
+        <p class="text-gray-400">
+          Lagos, Nigeria
+        </p>
+      </div>
+
+      <!-- Phone -->
+      <div class="bg-[#111] rounded-[30px] p-8 border border-white/10">
+        <div class="text-5xl mb-5">📞</div>
+        <h3 class="text-2xl font-bold mb-3">Call Us</h3>
+        <p class="text-gray-400">
+          +234 XXX XXX XXXX
+        </p>
+      </div>
+
+      <!-- Hours -->
+      <div class="bg-[#111] rounded-[30px] p-8 border border-white/10">
+        <div class="text-5xl mb-5">🕒</div>
+        <h3 class="text-2xl font-bold mb-3">Open Hours</h3>
+        <p class="text-gray-400">
+          Mon - Sun
+          <br>
+          9:00 AM - 11:00 PM
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<section class="py-24 bg-black">
+
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+
+<div class="grid lg:grid-cols-2 gap-10">
+
+<div>
+<iframe
+class="w-full h-[500px] rounded-[30px]"
+src="https://maps.app.goo.gl/bgs6ixbVZWkNFZZi7">
+</iframe>
+</div>
+
+<div class="flex items-center">
+
+<div>
+
+<h2 class="text-5xl font-bold mb-6">
+Find Us
+</h2>
+
+<p class="text-gray-400 text-lg">
+Visit Mercyluvspecial Kitchen and enjoy
+an unforgettable dining experience.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section
+id="reservationForm"
+class="py-24 bg-[#080808]"
+>
+
+<div class="max-w-4xl mx-auto px-6">
+
+<form
+class="
+bg-[#111]
+border border-white/10
+rounded-[40px]
+p-10
+space-y-6"
+>
+
+<input
+type="text"
+placeholder="Full Name"
+class="w-full bg-black p-5 rounded-2xl"
+/>
+
+<input
+type="tel"
+placeholder="Phone Number"
+class="w-full bg-black p-5 rounded-2xl"
+/>
+
+<input
+type="email"
+placeholder="Email Address"
+class="w-full bg-black p-5 rounded-2xl"
+/>
+
+<input
+type="number"
+placeholder="Number of Guests"
+class="w-full bg-black p-5 rounded-2xl"
+/>
+
+<input
+type="date"
+class="w-full bg-black p-5 rounded-2xl"
+/>
+
+<input
+type="time"
+class="w-full bg-black p-5 rounded-2xl"
+/>
+
+<textarea
+rows="5"
+placeholder="Special Requests"
+class="w-full bg-black p-5 rounded-2xl"
+></textarea>
+
+<button
+type="submit"
+class="premium-btn w-full py-5 rounded-full"
+>
+Reserve Table
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+
+<section class="py-24 bg-[#080808]">
+
+<div
+class="
+max-w-6xl
+mx-auto
+bg-gradient-to-r
+from-yellow-400
+to-yellow-500
+rounded-[40px]
+p-16
+text-center
+text-black"
+>
+
+<h2 class="text-5xl font-black mb-6">
+Need a Quick Order?
+</h2>
+
+<p class="text-xl mb-8">
+Chat directly with our team on WhatsApp.
+</p>
+
+<a
+href="https://wa.me/2348012345678"
+target="_blank"
+class="
+bg-black
+text-white
+px-10
+py-4
+rounded-full
+font-bold"
+>
+Order on WhatsApp
+</a>
+
+</div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="relative bg-[#050505] border-t border-white/10 overflow-hidden">
+
+  <!-- Glow Effects -->
+  <div class="absolute top-0 left-0 w-96 h-96 bg-yellow-500/10 blur-[150px] rounded-full"></div>
+  <div class="absolute bottom-0 right-0 w-96 h-96 bg-yellow-500/10 blur-[150px] rounded-full"></div>
+
+  <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 py-20">
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+
+      <!-- Brand -->
+      <div>
+
+        <h3 class="text-3xl font-black">
+          Mercyluvspecial
+          <span class="block text-yellow-400 text-xl mt-1">
+            Kitchen
+          </span>
+        </h3>
+
+        <p class="text-gray-400 mt-6 leading-relaxed">
+          Bringing authentic African flavors, premium dining,
+          and unforgettable culinary experiences to every customer.
+        </p>
+
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+
+        <h4 class="text-xl font-bold mb-6">
+          Quick Links
+        </h4>
+
+        <ul class="space-y-4 text-gray-400">
+
+          <li>
+            <a href="index.html" class="hover:text-yellow-400 transition">
+              Home
+            </a>
+          </li>
+
+          <li>
+            <a href="menu.html" class="hover:text-yellow-400 transition">
+              Menu
+            </a>
+          </li>
+
+          <li>
+            <a href="specials.html" class="hover:text-yellow-400 transition">
+              Specials
+            </a>
+          </li>
+
+          <li>
+            <a href="contact.html" class="hover:text-yellow-400 transition">
+              Contact
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <!-- Opening Hours -->
+      <div>
+
+        <h4 class="text-xl font-bold mb-6">
+          Opening Hours
+        </h4>
+
+        <ul class="space-y-4 text-gray-400">
+
+          <li>
+            Monday - Friday
+            <span class="block text-white">
+              8:00 AM - 10:00 PM
+            </span>
+          </li>
+
+          <li>
+            Saturday
+            <span class="block text-white">
+              9:00 AM - 11:00 PM
+            </span>
+          </li>
+
+          <li>
+            Sunday
+            <span class="block text-white">
+              10:00 AM - 9:00 PM
+            </span>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <!-- Contact -->
+      <div>
+
+        <h4 class="text-xl font-bold mb-6">
+          Contact
+        </h4>
+
+        <ul class="space-y-4 text-gray-400">
+
+          <li>
+            📍 Lagos, Nigeria
+          </li>
+
+          <li>
+            📞 +234 XXX XXX XXXX
+          </li>
+
+          <li>
+            ✉ info@mercyluvspecial.com
+          </li>
+
+        </ul>
+
+        <a
+          href="https://wa.me/234XXXXXXXXXX"
+          target="_blank"
+          class="inline-flex mt-6 bg-green-500 hover:bg-green-600 px-6 py-3 rounded-full font-semibold transition"
+        >
+          WhatsApp Us
+        </a>
+
+      </div>
+
+    </div>
+
+    <!-- Divider -->
+    <div class="border-t border-white/10 my-10"></div>
+
+    <!-- Bottom -->
+    <div
+      class="flex flex-col md:flex-row justify-between items-center gap-5"
+    >
+
+      <p class="text-gray-500 text-center md:text-left">
+        © 2026 Mercyluvspecial Kitchen. All Rights Reserved.
+      </p>
+
+      <div class="flex gap-5 text-2xl">
+
+        <a href="#" class="hover:text-yellow-400 transition">
+          📘
+        </a>
+
+        <a href="#" class="hover:text-yellow-400 transition">
+          📸
+        </a>
+
+        <a href="#" class="hover:text-yellow-400 transition">
+          🎵
+        </a>
+
+        <a href="#" class="hover:text-yellow-400 transition">
+          ▶️
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
+
+<!-- FLOATING WHATSAPP BUTTON -->
+<a
+  href="https://wa.me/2348012345678"
+  target="_blank"
+  class="fixed bottom-6 right-6 z-[9999] group"
+>
+
+  <div
+    class="w-16 h-16 rounded-full bg-green-500 flex items-center justify-center shadow-2xl hover:scale-110 transition-all duration-300"
+  >
+
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="32"
+      height="32"
+      fill="white"
+      viewBox="0 0 24 24"
+    >
+      <path d="M20.52 3.48A11.83 11.83 0 0 0 12.03 0C5.41 0 .03 5.38.03 12c0 2.11.55 4.17 1.6 5.99L0 24l6.19-1.62A11.92 11.92 0 0 0 12.03 24C18.65 24 24.03 18.62 24.03 12c0-3.2-1.25-6.21-3.51-8.52zM12.03 21.82c-1.8 0-3.56-.48-5.1-1.39l-.37-.22-3.68.96.98-3.59-.24-.37a9.76 9.76 0 0 1-1.5-5.21c0-5.42 4.41-9.83 9.83-9.83 2.62 0 5.08 1.02 6.93 2.88a9.75 9.75 0 0 1 2.87 6.95c0 5.42-4.41 9.82-9.82 9.82zm5.39-7.37c-.29-.15-1.72-.85-1.99-.94-.27-.1-.46-.15-.66.15-.19.29-.76.94-.93 1.13-.17.2-.34.22-.63.07-.29-.15-1.24-.46-2.36-1.47-.87-.78-1.46-1.75-1.63-2.04-.17-.29-.02-.45.13-.6.13-.13.29-.34.44-.51.15-.17.2-.29.29-.49.1-.2.05-.37-.02-.52-.08-.15-.66-1.59-.9-2.18-.24-.57-.48-.49-.66-.5h-.56c-.2 0-.52.08-.79.37-.27.29-1.04 1.01-1.04 2.46s1.06 2.86 1.21 3.06c.15.2 2.08 3.17 5.04 4.45.7.3 1.25.48 1.67.61.7.22 1.34.19 1.85.12.56-.08 1.72-.7 1.96-1.38.24-.68.24-1.26.17-1.38-.07-.12-.26-.19-.55-.34z"/>
+    </svg>
+
+  </div>
+
+  <!-- Pulse Animation -->
+  <span
+    class="absolute inset-0 rounded-full bg-green-500 animate-ping opacity-30"
+  ></span>
+
+</a>
+
+  <script src="script.js"></script>
+</body>
+</html>
