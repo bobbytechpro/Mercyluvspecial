@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MercyLuvSpecialKitchen | Premium Food Menu</title>
 <script src="https://cdn.tailwindcss.com"></script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,7 +15,12 @@
 
 
 <body class="text-white">
-  <header
+
+ <!-- ========================= -->
+<!-- PREMIUM NAVBAR -->
+<!-- ========================= -->
+
+<header
   class="
   fixed top-0 left-0 w-full z-[9999]
   bg-black/70 backdrop-blur-xl
@@ -289,68 +297,78 @@
 
 </div>
 
+
+
 <!-- ========================= -->
-<section
-  class="relative min-h-screen overflow-hidden bg-black pt-32"
->
+<section class="relative bg-black overflow-hidden pt-24 md:pt-32">
 
   <!-- Background -->
   <div class="absolute inset-0">
-
-    <!-- Background Image -->
     <img
-      src="./images/hero3.jpeg"
+      src="./images/Generated Image.jpg"
       alt=""
       class="w-full h-full object-cover opacity-20"
     >
 
-    <!-- Dark Overlay -->
-    <div
-      class="absolute inset-0 bg-gradient-to-r from-black via-black/90 to-black/70"
-    ></div>
+    <div class="absolute inset-0 bg-black/80"></div>
 
-    <!-- Gold Glow -->
-    <div
-      class="absolute top-20 left-20 w-72 h-72 bg-yellow-500/10 blur-[120px] rounded-full"
-    ></div>
-
-    <div
-      class="absolute bottom-0 right-0 w-96 h-96 bg-yellow-400/10 blur-[150px] rounded-full"
-    ></div>
-
+    <div class="absolute top-20 left-0 w-72 h-72 bg-yellow-500/10 blur-[120px] rounded-full"></div>
+    <div class="absolute bottom-0 right-0 w-72 h-72 bg-yellow-400/10 blur-[120px] rounded-full"></div>
   </div>
 
-  <!-- Content -->
-  <div
-    class="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 min-h-screen flex items-center"
-  >
+  <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
 
-    <div
-      class="grid lg:grid-cols-2 gap-16 items-center"
-    >
+    <div class="grid lg:grid-cols-2 gap-10 items-center">
 
-      <!-- Left -->
-      <div>
+      <!-- TEXT -->
+      <div
+        class="
+        text-center
+        lg:text-left
+        py-10
+        lg:py-20
+      "
+      >
 
         <p
-          class="text-yellow-400 uppercase tracking-[8px] mb-6"
+          class="
+          text-yellow-400
+          uppercase
+          tracking-[3px]
+          md:tracking-[8px]
+          mb-4
+        "
         >
           Mercyluvspecial Signature Collection
         </p>
 
         <h1
-          class="text-5xl md:text-6xl xl:text-7xl font-black leading-tight mb-8"
+          class="
+          text-4xl
+          sm:text-5xl
+          lg:text-7xl
+          font-black
+          leading-tight
+          mb-6
+        "
         >
           Chef's
 
           <span class="text-yellow-400 block">
             Signature Specials
           </span>
-
         </h1>
 
         <p
-          class="text-gray-300 text-lg md:text-xl leading-relaxed max-w-xl mb-10"
+          class="
+          text-gray-300
+          text-base
+          md:text-lg
+          max-w-xl
+          mx-auto
+          lg:mx-0
+          mb-8
+        "
         >
           Discover our most celebrated dishes,
           crafted with authentic African recipes,
@@ -358,19 +376,34 @@
         </p>
 
         <div
-          class="flex flex-wrap gap-4"
+          class="
+          flex
+          flex-col
+          sm:flex-row
+          justify-center
+          lg:justify-start
+          gap-4
+        "
         >
 
           <a
             href="menu.html"
-            class="premium-btn px-8 py-4 rounded-full"
+            class="premium-btn px-8 py-4 rounded-full text-center"
           >
             Order Now
           </a>
 
           <a
             href="#specialsGrid"
-            class="border border-white/20 px-8 py-4 rounded-full hover:bg-white hover:text-black transition"
+            class="
+            border border-white/20
+            px-8 py-4
+            rounded-full
+            hover:bg-white
+            hover:text-black
+            transition
+            text-center
+          "
           >
             Explore Specials
           </a>
@@ -379,29 +412,47 @@
 
       </div>
 
-      <!-- Right -->
+      <!-- IMAGE -->
       <div
-        class="relative flex justify-center"
-      >
-
-        <!-- Glow -->
-        <div
-          class="absolute w-[500px] h-[500px] bg-yellow-500/10 blur-[150px] rounded-full"
-        ></div>
+       class="flex justify-center pb-10">
 
         <div
-          class="relative overflow-hidden rounded-[40px] border border-white/10"
+          class="
+          relative
+          overflow-hidden
+          rounded-[24px]
+          md:rounded-[40px]
+          border border-white/10
+          w-full
+          max-w-md
+        "
         >
 
           <img
-            src="./images/rice1.jpg"
-            alt="Chef Special"
-            class="w-full max-w-[550px] h-[650px] object-cover hover:scale-105 transition duration-700"
+            src="./images/soup1.jpg"
+            alt=""
+            class="
+            w-full
+            h-[280px]
+            sm:h-[380px]
+            lg:h-[600px]
+            object-cover
+          "
           >
 
-          <!-- Floating Badge -->
           <div
-            class="absolute top-6 left-6 bg-yellow-400 text-black px-5 py-3 rounded-full font-bold"
+            class="
+            absolute
+            top-4
+            left-4
+            bg-yellow-400
+            text-black
+            px-4
+            py-2
+            rounded-full
+            font-bold
+            text-sm
+          "
           >
             👑 Chef's Pick
           </div>
@@ -416,9 +467,9 @@
 
 </section>
 
-<section class="py-24 bg-[#080808]">
+<section class="py-12 md:py-24 bg-[#080808]">
 
-  <div class="max-w-7xl mx-auto px-6 lg:px-12">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
 
     <div class="text-center mb-16">
 
@@ -426,18 +477,21 @@
         Featured Dishes
       </p>
 
-      <h2 class="text-5xl font-bold">
+      <h2 class="text-3xl md:text-5xl font-bold">
         Today's Signature Selection
       </h2>
 
     </div>
 
-    <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
+    <div
+  id="specialsGrid"
+  class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-8"
+>
 
       <!-- Special Card -->
        <div
 class="group bg-[#111]
-rounded-[32px]
+rounded-[20px] md:rounded-[32px]
 overflow-hidden
 border border-white/10
 hover:border-yellow-400/30
@@ -457,11 +511,11 @@ transition duration-500">
 
   </div>
 
-  <div class="p-6">
+  <div class="p-4 md:p-6">
 
-    <div class="flex justify-between items-center mb-4">
+    <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-3 mb-4">
 
-      <h3 class="text-2xl font-bold">
+      <h3 class="text-xl md:text-2xl font-bold">
         Luxury Jollof Rice
       </h3>
 
@@ -496,26 +550,154 @@ transition duration-500">
 
   </div>
 
-</div>
+      </div>
+      
+      <div
+        class="group bg-[#111]
+        rounded-[32px]
+        overflow-hidden
+        border border-white/10
+        hover:border-yellow-400/30
+        transition duration-500">
+
+  <div class="overflow-hidden">
+
+    <img
+      src="./images/rice1.jpg"
+      class="
+      w-full
+      h-72
+      object-cover
+      group-hover:scale-110
+      transition duration-700"
+    >
 
   </div>
+
+  <div class="p-6">
+
+    <div class="flex justify-between items-center mb-4">
+
+      <h3 class="text-xl md:text-2xl font-bold">
+        Luxury Jollof Rice
+      </h3>
+
+      <span
+      class="
+      bg-yellow-400
+      text-black
+      px-4 py-2
+      rounded-full
+      font-bold">
+      ₦8,000
+      </span>
+
+    </div>
+
+    <p class="text-gray-400 mb-6">
+      Rich Nigerian jollof prepared with premium ingredients and grilled chicken.
+    </p>
+
+    <button
+    class="
+    w-full
+    py-4
+    rounded-full
+    bg-yellow-400
+    text-black
+    font-bold
+    hover:scale-105
+    transition">
+      Order Now
+    </button>
+
+  </div>
+
+      </div>
+
+      <div
+        class="group bg-[#111]
+        rounded-[32px]
+        overflow-hidden
+        border border-white/10
+        hover:border-yellow-400/30
+        transition duration-500">
+
+  <div class="overflow-hidden">
+
+    <img
+      src="./images/eggs1.jpg"
+      class="
+      w-full
+      h-72
+      object-cover
+      group-hover:scale-110
+      transition duration-700"
+    >
+
+  </div>
+
+  <div class="p-6">
+
+    <div class="flex justify-between items-center mb-4">
+
+      <h3 class="text-xl md:text-2xl font-bold">
+        Luxury Jollof Rice
+      </h3>
+
+      <span
+      class="
+      bg-yellow-400
+      text-black
+      px-4 py-2
+      rounded-full
+      font-bold">
+      ₦12,000
+      </span>
+
+    </div>
+
+    <p class="text-gray-400 mb-6">
+      Rich Nigerian yam and eggs prepared with premium ingredients and grilled chicken.
+    </p>
+
+    <button
+    class="
+    w-full
+    py-4
+    rounded-full
+    bg-yellow-400
+    text-black
+    font-bold
+    hover:scale-105
+    transition">
+      Order Now
+    </button>
+
+  </div>
+
+      </div>
+    </div>
 
   </div>
 
 </section>
-<section class="py-24 bg-[#080808]">
 
-  <div class="max-w-7xl mx-auto px-6 lg:px-12">
+<section class="py-12 md:py-24 bg-[#080808]">
 
-    <div class="grid lg:grid-cols-2 gap-12 items-center">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
 
       <!-- Image -->
       <div class="overflow-hidden rounded-[32px]">
         <img
           src="./images/hero7.jpg"
           alt="Chef Recommendation"
-          class="w-full h-[500px] object-cover hover:scale-105 transition duration-700"
-        >
+          
+        class="w-full h-[250px] sm:h-[350px] md:h-[500px] object-cover"
+>
+        
       </div>
 
       <!-- Content -->
@@ -525,7 +707,7 @@ transition duration-500">
           👨‍🍳 Chef Recommendation
         </span>
 
-        <h2 class="text-5xl font-bold mt-6 mb-6">
+       <h2 class="text-2xl sm:text-3xl md:text-5xl font-bold mt-6 mb-6">
           Seafood Signature Rice
         </h2>
 
@@ -557,26 +739,26 @@ transition duration-500">
 
 </section>
 
-<section class="py-24 bg-black">
+<section class="py-12 md:py-24 bg-black">
 
-  <div class="max-w-7xl mx-auto px-6 lg:px-12">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
 
     <div class="text-center mb-16">
 
-      <p class="text-yellow-400 uppercase tracking-[6px]">
+      <p class="text-yellow-400 uppercase tracking-[3px] md:tracking-[6px]">
         Testimonials
       </p>
 
-      <h2 class="text-5xl font-bold mt-4">
+      <h2 class="text-3xl md:text-5xl font-bold mt-4">
         What Our Customers Say
       </h2>
 
     </div>
 
-    <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-8">
 
       <!-- Review 1 -->
-      <div class="bg-[#111] border border-white/10 rounded-[32px] p-8">
+      <div class="bg-[#111] border border-white/10 rounded-[24px] md:rounded-[32px] p-5 md:p-8">
 
         <div class="text-yellow-400 mb-4">
           ⭐⭐⭐⭐⭐
@@ -594,7 +776,7 @@ transition duration-500">
       </div>
 
       <!-- Review 2 -->
-      <div class="bg-[#111] border border-white/10 rounded-[32px] p-8">
+      <div class="bg-[#111] border border-white/10 rounded-[24px] md:rounded-[32px] p-5 md:p-8">
 
         <div class="text-yellow-400 mb-4">
           ⭐⭐⭐⭐⭐
@@ -612,7 +794,7 @@ transition duration-500">
       </div>
 
       <!-- Review 3 -->
-      <div class="bg-[#111] border border-white/10 rounded-[32px] p-8">
+      <div  class="bg-[#111] border border-white/10 rounded-[24px] md:rounded-[32px] p-5 md:p-8" >
 
         <div class="text-yellow-400 mb-4">
           ⭐⭐⭐⭐⭐
@@ -633,24 +815,25 @@ transition duration-500">
   </div>
 
 </section>
-<section class="py-24 px-6 bg-[#080808]">
+
+<section class="py-12 md:py-24 px-4 sm:px-6 bg-[#080808]">
 
   <div
     class="
     max-w-6xl
     mx-auto
-    rounded-[40px]
+    rounded-[24px] md:rounded-[40px]
     overflow-hidden
     bg-gradient-to-r
     from-yellow-400
     to-yellow-500
-    p-12 lg:p-20
+    p-6 md:p-12 lg:p-20
     text-center
     text-black
     "
   >
 
-    <h2 class="text-4xl lg:text-6xl font-black mb-6">
+    <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-black mb-6">
       Reserve Your Table Today
     </h2>
 
@@ -659,21 +842,23 @@ transition duration-500">
       and authentic African cuisine crafted with passion.
     </p>
 
-    <div class="flex flex-wrap justify-center gap-5">
+    <div class="flex flex-col sm:flex-row justify-center gap-4 sm:gap-5">
 
       <a
         href="contact.html"
         class="
-        bg-black
-        text-white
-        px-10
-        py-4
-        rounded-full
-        font-bold
-        hover:scale-105
-        transition
-        "
-      >
+      w-full
+      sm:w-auto
+      text-center
+      bg-black
+      text-white
+      px-10
+      py-4
+      rounded-full
+      font-bold
+      hover:scale-105
+      transition
+      ">
         Book Reservation
       </a>
 
@@ -681,15 +866,18 @@ transition duration-500">
         href="https://wa.me/2348012345678"
         target="_blank"
         class="
-        bg-white
-        text-black
-        px-10
-        py-4
-        rounded-full
-        font-bold
-        hover:scale-105
-        transition
-        "
+      w-full
+      sm:w-auto
+      text-center
+      bg-black
+      text-white
+      px-10
+      py-4
+      rounded-full
+      font-bold
+      hover:scale-105
+      transition
+      "
       >
         WhatsApp Order
       </a>
