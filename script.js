@@ -16,32 +16,33 @@ if(closeMenu){
 
 
 
-const heroImages = [
-  "./images/hero1.jpeg",
-  "./images/hero2.jpeg",
-  "./images/hero3.jpeg",
-  "./images/hero4.jpeg",
-  "./images/hero5.jpg",
-  "./images/hero6.jpg",
-  "./images/hero7.jpg",
-  "./images/hero8.jpg",
-  "./images/hero9.jpg"
-];
+const heroImage = document.getElementById("heroImage");
 
-let current = 0;
+if (heroImage) {
 
-setInterval(() => {
+  const heroImages = [
+    "./images/hero1.jpeg",
+    "./images/hero2.jpeg",
+    "./images/hero3.jpeg",
+    "./images/hero4.jpeg",
+    "./images/hero5.jpeg",
+    "./images/hero6.jpg",
+    "./images/hero7.jpg",
+    "./images/hero8.jpg",
+    "./images/hero9.jpg"
+  ];
 
-  current++;
+  let current = 0;
 
-  if(current >= heroImages.length){
-    current = 0;
-  }
+  setInterval(() => {
 
-  document.getElementById("heroImage").src =
-    heroImages[current];
+    current = (current + 1) % heroImages.length;
 
-}, 3000);
+    heroImage.src = heroImages[current];
+
+  }, 3000);
+
+}
 
 
 
@@ -170,4 +171,45 @@ filterBtns.forEach(btn => {
 
   });
 
+});
+
+window.addEventListener("load", () => {
+  const loader = document.getElementById("loader");
+
+  document.body.classList.add("loaded");
+
+  if (loader) {
+    loader.classList.add("opacity-0");
+
+    setTimeout(() => {
+      loader.style.display = "none";
+    }, 700);
+  }
+});
+
+
+const whatsappNumber = "+2349011183435";
+
+document.querySelectorAll(".order-btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    const name = btn.dataset.name;
+    const price = btn.dataset.price;
+    const image = btn.dataset.image;
+
+    const message =
+`Hello MercyLuv Special Kitchen,
+
+I want to order:
+
+Food: ${name}
+Price: ${price}
+
+Image:
+${image}`;
+
+    const url =
+`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+
+    window.open(url, "_blank");
+  });
 });
